@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem;
+    color: #3e4152;
+}
+h1{
+    font-size:3rem;
+}
+
+h1, h2, p{
+    margin: 0.625rem 0;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+.alert-box, .outlined-box, .filled-box{
+    border:1px solid #3e4152;
+    margin: auto;
+    width:80%;
+    padding: 0.3rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+.fa{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+}
+.alert{
+    display: flex;
+}
+span{
+    font-size: 1rem;
+    padding:0.4rem;
+}
+.success-alert,.warning-alert, .error-alert, .info-alert, .outline-success, .outline-warning, .outline-info, .outline-error, .filled-success,.filled-warning, .filled-error, .filled-info{
+    margin: 1.5rem;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.success-alert{
+    background-color: #84f1c9;
+    color: #1b7052;
+    border: 2px solid #84f1c9;
+}
+
+.warning-alert{
+    color: #ff9204;
+    background-color: #ffe7c5;
+    border: 2px solid #ffe7c5;
+}
+
+.info-alert{
+    color: #084298;
+    background-color: #cfe2ff;
+    border:2px solid #b6d4fe;
+}
+
+.error-alert{
+    color: #dc3545;
+    background-color: #fcc5c5;
+    border: 2px solid #fcc5fc;
+}
+
+.outline-success{
+    color: #1b7052;
+    border: 2px solid #1b7052;
+}
+.outline-warning{
+    color: #ff9204;
+    border: 2px solid #ff9204;
+}
+
+.outline-info{
+    color: #084298;
+    border:2px solid #084298;
+}
+
+.outline-error{
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+.filled-success{
+    color:white;
+    background-color: #2e7d32;
+}
+.filled-warning{
+    color: white;
+    background-color: #ed6c02;
+}
+
+.filled-info{
+    color:white;
+    background-color: #0288d1;
+}
+
+.filled-error{
+    color:white;
+    background-color: #d32f2f;
+}
+.primary-text{
+    color:#007FFF;
+    font-size: 1.2rem;
+}

@@ -5,9 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alert</title>
-    <link href="stylesheet" rel="./alert.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./alert.css" rel="stylesheet">
 </head>
 <body>
-    
+    <h1>Alerts</h1>
+    <p>An alert indicates a brief, meaningful message in a way that draws the user's attention without interrupting the user's task.</p>
+   
+        <!--basic variant-->
+    <div>
+        <h2>Basic Alerts</h2>
+         <p>The alert offers four severity levels that set a distinctive icon and color. These are:-<span class="primary-text">success alert, warning alert, information alert, danger alert.</span>
+            <br>
+            You can copy html part from below code snippet.
+         </p>
+    </div>
+
+    <div class="alert-box">
+        <!--success alert--> 
+<div class = "alert success-alert">
+    <div><i class="fa fa-check-circle"></i></div>
+    <span><strong>Success!</strong> This is a success alert — Check it out!!</span>
+</div>
+
+<!--warning alert-->
+<div class = "alert warning-alert">
+     <div><i class="fa fa-exclamation-triangle"></i></div>
+     <span><strong>Warning!</strong> This is a warning alert — Check it out!!</span>
+</div>
+
+<!--info alert-->
+<div class = "alert info-alert">
+     <div><i class="fa fa-info-circle"></i></div>
+     <span><strong>Information!</strong> This is an info alert — Check it out!!</span>
+</div>
+
+<!--error alert-->
+<div class = "alert error-alert">
+      <div><i class="fa fa-exclamation-circle"></i></div>
+      <span><strong>Error!</strong> This is an error alert — Check it out!!</span>
+</div>
+    </div>
+
+        <!--outlined variant-->
+    <div>
+        <h2>Outlined Alerts</h2>
+        <p>Outline alerts are created by using<span class="primary-text">alert class,</span> followed by<span class="primary-text">outline-variant</span>.<br>
+            You can copy html part from below code snippet.</p>
+    </div>
+
+    <div class="outlined-box">
+                <!--success alert--> 
+        <div class="alert outline-success">
+            <span><strong>Success!</strong> This is a success alert — Check it out!!</span>
+        </div>
+
+        <!--warning alert-->
+        <div class="alert outline-warning">
+            <span><strong>Warning!</strong> This is a warning alert — Check it out!!</span>
+        </div>
+
+        <!--info alert-->
+        <div class="alert outline-info">
+            <span><strong>Information!</strong> This is an info alert — Check it out!!</span>
+        </div>
+
+        <!--error alert-->
+        <div class="alert outline-error">
+            <span><strong>Error!</strong> This is an error alert — Check it out!!</span>
+        </div>
+    </div>
+
+        <!--filled variant-->
+    <div>
+        <h2>Filled Alerts</h2>
+        <p>Filled alerts are created by using<span class="primary-text">alert class,</span> followed by<span class="primary-text">filled-variant</span>.<br>
+            You can copy html part from below code snippet.</p>
+    </div>
+
+    <div class="filled-box">
+                        <!--success alert--> 
+        <div class="alert filled-success">
+            <span><strong>Success!</strong> This is a success alert — Check it out!!</span>
+        </div>
+
+        <!--warning alert-->
+        <div class="alert filled-warning">
+            <span><strong>Warning!</strong> This is a warning alert — Check it out!!</span>
+        </div>
+
+        <!--info alert-->
+        <div class="alert filled-info">
+            <span><strong>Information!</strong> This is an info alert — Check it out!!</span>
+        </div>
+        
+        <!--error alert-->
+     <div class="alert filled-error">
+            <span><strong>Error!</strong> This is an error alert — Check it out!!</span>
+        </div>
+    </div>
+
 </body>
 </html>
