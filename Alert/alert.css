@@ -139,3 +139,20 @@ span{
     color:var(--text-color);
     font-size: 1.2rem;
 }
+
+.code-snippet-display{
+    box-sizing: border-box;
+    width: 80%;
+    max-height: 300px;
+    padding: 1rem 0;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    overflow: auto;
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+}
+.code-snippet-display iframe{
+    width: 100%;
+    border: none;
+}
