@@ -47,7 +47,7 @@ span{
     font-size: 1rem;
     padding:0.4rem;
 }
-.success-alert,.warning-alert, .error-alert, .info-alert, .outline-success, .outline-warning, .outline-info, .outline-error, .filled-success,.filled-warning, .filled-error, .filled-info{
+.alerts-variants{
     margin: 1.5rem;
     border-radius: 4px;
     padding: 0.5rem;
