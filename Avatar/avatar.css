@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --gray:#3e4152;
+    --text-color:#007FFF;
+    --gray-bg:#e5e5e5;
+    --gray-hover:#adb5bd;
+    --blue-bg:#023e8a;
+    --bg-code:#FAFAFA;
+    --colour-txt:white;
+    --highlight:black;
+    --blue-color:#3a86ff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem;
+    color:var(--gray);
+}
+h1{
+    font-size:3rem;
+}
+
+h1, h2, p{
+    margin: 0.625rem 0;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+.img-box{
+    border:1px solid var(--gray);
+    margin: auto;
+    width:80%;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fas{
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+.primary-text{
+    color: var(--text-color);
+}
+
+.avatar-lg-size{
+    border-radius: 50%;
+    width: 12rem;
+    height:12rem;
+    margin-left: 1.2rem;
+}
+.avatar-md-size{
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    width: 10rem;
+    height:10rem;
+}
+.avatar-sm-size{
+    border-radius: 50%;
+    margin-top: 5rem;
+    margin-left: 1.2rem;
+    width: 7rem;
+    height:7rem;
+}
+.avatar-xs-size{
+    border-radius: 50%;
+    margin-top: 7.5rem;
+    margin-left: 1.2rem;
+    width: 4.5rem;
+    height:4.5rem;
+}
