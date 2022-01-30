@@ -100,8 +100,8 @@ span{
     border: 2px solid var(--green);
 }
 .outline-warning{
-    color:var(--yelow);
-    border: 2px solid var(--yelow);
+    color:var(--yellow);
+    border: 2px solid var(--yellow);
 }
 
 .outline-info{
