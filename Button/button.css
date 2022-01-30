@@ -64,7 +64,7 @@ button{
     margin: 1.5rem 0.8rem;
     border-radius: 6px;
 }
-.btn-solid-primary, .btn-floating{
+.btn-solid-primary{
     color:var(--colour-txt);
     background: var(--text-color);
     border-style:var(--colour-txt);
@@ -180,4 +180,44 @@ button{
 .code-snippet-display iframe{
     width: 100%;
     border: none;
+}
+
+.btn-social{
+    border: none;
+    outline: none;
+}
+.fab{
+    font-size: 2rem;
+    margin: 1.2rem;
+    padding: 0.5rem;
+    color:var(--blue-color);
+    box-shadow:0 2px 5px var(--text-color);
+}
+
+.fab:hover{
+    background: var(--highlight);
+}
+
+.btn-size-box .fas{
+    font-size: 1.3rem;
+}
+
+.btn-float-action{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0.5rem auto;
+background: var(--text-color);
+height: 3rem;
+    width: 3rem;
+    border-radius: 2rem;
+}
+
+.btn-float-action .fas{
+    font-size: 1.4rem;
+    color: var(--colour-txt);
+    padding: 0.3rem;
+}
+.btn-float-action .fas:hover{
+    color: var(--highlight);
 }
