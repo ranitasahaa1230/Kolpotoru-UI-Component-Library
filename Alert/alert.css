@@ -17,15 +17,12 @@
     --blue-border:#b6d4fe;
     --red:#dc3545;
     --red-bg:#fcc5c5;
-    --outline-green:#1b7052;
-    --outline-yellow:#ff9204;
-    --outline-blue:#084298;
-    --outline-red:#dc3545;
     --text-color:#007FFF;
     --filled-red:#d32f2f;
     --filled-blue:#0288d1;
     --filled-yellow:#ed6c02;
     --filled-green:#2e7d32;
+    --bg-code:#FAFAFA;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -99,22 +96,22 @@ span{
 }
 
 .outline-success{
-    color: var(--outline-green);
-    border: 2px solid var(--outline-green);
+    color: var(--green);
+    border: 2px solid var(--green);
 }
 .outline-warning{
-    color:var(--outline-yellow);
-    border: 2px solid var(--outline-yellow);
+    color:var(--yelow);
+    border: 2px solid var(--yelow);
 }
 
 .outline-info{
-    color: var(--outline-blue);
-    border:2px solid var(--outline-blue);
+    color: var(--blue);
+    border:2px solid var(--blue);
 }
 
 .outline-error{
-    color:var(--outline-red);
-    border: 2px solid var(--outline-red);
+    color:var(--red);
+    border: 2px solid var(--red);
 }
 
 .filled-success{
@@ -145,7 +142,7 @@ span{
     width: 80%;
     max-height: 300px;
     padding: 1rem 0;
-    background-color: #FAFAFA;
+    background-color:var(--bg-code);
     margin: 0 auto;
     overflow: auto;
     border: 2px solid var(--text-color);
