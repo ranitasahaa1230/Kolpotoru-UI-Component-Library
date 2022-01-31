@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --gray:#3e4152;
+    --text-color:#007FFF;
+    --blue-bg:#023e8a;
+    --white-bg:#FAFAFA;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem;
+    color:var(--gray);
+}
+h1{
+    font-size:3rem;
+}
+
+h1, h2, p{
+    margin: 0.625rem 0;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+.avatar-box{
+    border:1px solid var(--gray);
+    margin: auto;
+    width:80%;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fas{
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+.primary-text{
+    color: var(--text-color);
+}
+.avatar{
+    border-radius: 50%;
+    margin-left: 1.2rem;
+    color:var(--white-bg);
+    border: 2px solid var(--white-bg);
+}
+
+.avatar-lg-size{
+    width: 10.9rem;
+    height:10.9rem;
+    font-size: 3rem;
+}
+.avatar-md-size{    
+    margin-top: 1.5rem;
+    width: 8.9rem;
+    height:8.9rem;
+    font-size: 2rem;
+}
+.avatar-sm-size{
+    margin-top: 3rem;
+    width: 6.9rem;
+    height:6.9rem;
+    font-size: 1.5rem;
+}
+.avatar-xs-size{
+    margin-top: 4.5rem;
+    width: 4.9rem;
+    height:4.9rem;
+    font-size: 0.8rem;
+}
+
+.avatar-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue-bg);
+}
+.square{
+    margin-left: 1.2rem;
+    border-radius: 1.5rem;
+}
+
+.code-snippet-display{
+    box-sizing: border-box;
+    width: 80%;
+    max-height: 300px;
+    padding: 1rem 0;
+    background-color:var(--white-bg);
+    margin: 0 auto;
+    overflow: auto;
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+}
+.code-snippet-display iframe{
+    width: 100%;
+    border: none;
+}
