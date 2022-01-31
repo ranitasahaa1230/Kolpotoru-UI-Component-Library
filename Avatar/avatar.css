@@ -10,8 +10,7 @@
     --gray:#3e4152;
     --text-color:#007FFF;
     --blue-bg:#023e8a;
-    --bg-code:#FAFAFA;
-    --colour-txt:white;
+    --white-bg:#FAFAFA;
 }
 
 body{
@@ -55,8 +54,8 @@ p{
 .avatar{
     border-radius: 50%;
     margin-left: 1.2rem;
-    color:var(--colour-txt);
-    border: 2px solid var(--colour-txt);
+    color:var(--white-bg);
+    border: 2px solid var(--white-bg);
 }
 
 .avatar-lg-size{
@@ -99,7 +98,7 @@ p{
     width: 80%;
     max-height: 300px;
     padding: 1rem 0;
-    background-color:var(--bg-code);
+    background-color:var(--white-bg);
     margin: 0 auto;
     overflow: auto;
     border: 2px solid var(--text-color);
