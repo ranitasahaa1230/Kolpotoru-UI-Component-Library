@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ranita Saha">
+    <meta name="description" content="avatar Component">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./avatar.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <h1>Avatar</h1>
+    <p>
+        The Avatar component is used to represent a user, and displays the profile picture or Initials.
+    </p>
+
+    <div>
+      <h2>Image Avatars</h2>
+      <p>
+        Avatar is available in 4 different sizes. You can use image in Avatar. You need to include class <span class="primary-text">avatar</span> and for size add class according to size <span class="primary-text">avatar-lg-size, avatar-md-size, avatar-sm-size, avatar-xs-size</span>(e.g. <span class="primary-text">class="avatar avatar-lg-size"</span>)
+        <br>
+        Copy the styles of different avatars and use it in your code.
+      </p>
+    </div>
+
+    <div class="img-box avatar-box">
+              <img class="avatar avatar-lg-size" src="images/travel.jpg" alt="avatar">
+              <img class="avatar avatar-md-size" src="images/travel.jpg" alt="avatar">
+              <img class="avatar avatar-sm-size" src="images/travel.jpg" alt="avatar">
+              <img class="avatar avatar-xs-size" src="images/travel.jpg" alt="avatar">
+    </div>     
+
+    <div class="code-snippet-display">
+      <code>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=802.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cimg%2520class%253D%2522avatar%2520avatar-lg-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-sm-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xs-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+        style="border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Letter Avatars</h2>
+      <p>
+        You can use initial letters of user in Avatar as well. You need to include class <span class="primary-text">avatar-text</span> along with <span class="primary-text"> avatar</span> and size class. (e.g. <span class="primary-text">class="avatar avatar-lg-size avatar-text"</span>) 
+      </p>
+    </div>
+
+    <div class="text-box avatar-box">
+      <div class="avatar avatar-lg-size avatar-text" role="img" alt="avatar">RS</div>
+      <div class="avatar avatar-md-size avatar-text" role="img" alt="avatar">RS</div>
+      <div class="avatar avatar-sm-size avatar-text" role="img" alt="avatar">RS</div>
+      <div class="avatar avatar-xs-size avatar-text" role="img" alt="avatar">RS</div>
+    </div>
+
+    <div class="code-snippet-display">
+      <code>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=802.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+        style="border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Square Avatars</h2>
+      <p>
+        Adding a class <span class="primary-text">square</span> to existing class, will generate a square shaped avatar.
+      </p>
+    </div>
+
+    <div class="square-box avatar-box">
+      <img class="avatar-lg-size square" src="./images/avatar.jpg" alt="avatar">
+      <img class="avatar-md-size square" src="./images/avatar.jpg" alt="avatar">
+      <img class="avatar-sm-size square" src="./images/avatar.jpg" alt="avatar">
+      <img class="avatar-xs-size square" src="./images/avatar.jpg" alt="avatar">
+    </div>
+
+    <div class="code-snippet-display">
+      <code>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=750.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%2520class%253D%2522avatar-lg-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-md-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-sm-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-xs-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+        style="border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </code>
+    </div>
+
+    
+
+</body>
+</html>
