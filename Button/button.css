@@ -209,8 +209,8 @@ justify-content: center;
 margin: 0.5rem auto;
 background: var(--text-color);
 height: 3rem;
-    width: 3rem;
-    border-radius: 2rem;
+width: 3rem;
+border-radius: 2rem;
 }
 
 .btn-float-action .fas{
