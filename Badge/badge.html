@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Ranita Saha">
-    <meta name="description" content="avatar Component">
+    <meta name="description" content="badge Component">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,35 +20,71 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./avatar.css" rel="stylesheet" />
+    <link href="./badge.css" rel="stylesheet" />
 </head>
 <body>
     
-    <h1>Avatar</h1>
+    <h1>Badges</h1>
     <p>
-        The Avatar component is used to represent a user, and displays the profile picture or Initials.
+        Badges are used to highlight an item's status for quick recognition.
     </p>
 
     <div>
-      <h2>Image Avatars</h2>
+      <h2>Profile Badges</h2>
       <p>
-        Avatar is available in 4 different sizes. You can use image in Avatar. You need to include class <span class="primary-text">avatar</span> and for size add class according to size <span class="primary-text">avatar-lg-size, avatar-md-size, avatar-sm-size, avatar-xs-size</span>(e.g. <span class="primary-text">class="avatar avatar-lg-size"</span>)
+        Profile Badge is used to show the current status of a user. It can be used with 3 variants : <span class="primary-text">online | offline | dnd</span>
         <br>
-        Copy the styles of different avatars and use it in your code.
+        Check code below to copy the html part as is.
       </p>
     </div>
 
-    <div class="img-box avatar-box">
-              <img class="avatar avatar-lg-size" src="images/travel.jpg" alt="avatar">
-              <img class="avatar avatar-md-size" src="images/travel.jpg" alt="avatar">
-              <img class="avatar avatar-sm-size" src="images/travel.jpg" alt="avatar">
-              <img class="avatar avatar-xs-size" src="images/travel.jpg" alt="avatar">
-    </div>     
+    <div class="profile-box badge-box">
+      <div class="badge">
+          <img class="avatar" src="images/badge.jpg" alt="avatar">
+          <span class="status-avatar online"></span>
+      </div>
+
+      <div class="badge">
+        <img class="avatar" src="images/badge.jpg" alt="avatar">
+        <span class="status-avatar offline"></span>
+    </div>
+
+    <div class="badge">
+      <img class="avatar" src="images/badge.jpg" alt="avatar">
+      <span class="status-avatar dnd"></span>
+  </div>   
+</div>     
 
     <div class="code-snippet-display">
       <code>
         <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=802.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cimg%2520class%253D%2522avatar%2520avatar-lg-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-sm-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xs-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=802.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520offline%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520dnd%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+          style="border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Text Badges</h2>
+      <p>
+        We have 2 types of text badges that can be integrated with text. Badge with rounded edges and square edges. Font size of badge text is in <span class="primary-text">em</span>. It will change as per the parent element's font-size.
+      </p>
+    </div>
+
+    <div class="text-box badge-box">
+        <h2 class="badge-container">Example of Heading with Badge <span class="badges bg-secondary">New</span></h2>
+        <h3 class="badge-container">Example of Heading with Badge <span class="badges bg-secondary">New</span></h3>
+        <h4 class="badge-container">Example of Heading with Badge <span class="badges bg-secondary round-pill-badge">New</span></h4>
+        <h5 class="badge-container">Example of Heading with Badge <span class="badges bg-primary">New</span></h5>
+        <h6 class="badge-container">Example of Heading with Badge <span class="badges bg-primary">New</span></h6>
+        <div class="badge-container">Example of Body with Badge <span class="badges bg-primary round-pill-badge">New</span></div>
+    </div>
+
+    <div class="code-snippet-display">
+      <code>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=653.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Ch2%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-secondary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-primary%2522%253ENew%253C%252Fspan%253E%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-primary%2522%253ENew%253C%252Fspan%253E%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Body%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-primary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
         style="border:0; transform: scale(1); overflow:hidden;"
         sandbox="allow-scripts allow-same-origin">
       </iframe>
@@ -56,49 +92,41 @@
     </div>
 
     <div>
-      <h2>Letter Avatars</h2>
+      <h2>Icon Badges</h2>
       <p>
-        You can use initial letters of user in Avatar as well. You need to include class <span class="primary-text">avatar-text</span> along with <span class="primary-text"> avatar</span> and size class. (e.g. <span class="primary-text">class="avatar avatar-lg-size avatar-text"</span>) 
+          Icon badges are used to show cart or notification count, you can use number badge.
       </p>
     </div>
 
-    <div class="text-box avatar-box">
-      <div class="avatar avatar-lg-size avatar-text" role="img" alt="avatar">RS</div>
-      <div class="avatar avatar-md-size avatar-text" role="img" alt="avatar">RS</div>
-      <div class="avatar avatar-sm-size avatar-text" role="img" alt="avatar">RS</div>
-      <div class="avatar avatar-xs-size avatar-text" role="img" alt="avatar">RS</div>
+    <div class="square-box badge-box">
+        <div class="btn-icon">
+            <span class="badge-container"><i class="fas fa-shopping-cart"></i>
+                <span class="status-badge badge-number">15</span>
+            </span>
+          </div>
+          <div class="btn-icon">
+            <span class="badge-container"><i class="fas fa-envelope"></i>
+                <span class="status-badge status-badge-number">10</span>
+            </span>
+          </div>
+          <div class="btn-icon">
+            <span class="badge-container"><i class="fab fa-instagram-square"></i>
+                <span class="status-badge badge-number">71</span>
+            </span>
+          </div>
+          <div class="btn-icon">
+            <span class="badge-container"><i class="fas fa-bell"></i>
+                <span class="status-badge status-badge-number">12</span>
+            </span>
+          </div>
     </div>
 
     <div class="code-snippet-display">
       <code>
         <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=802.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-        style="border:0; transform: scale(1); overflow:hidden;"
-        sandbox="allow-scripts allow-same-origin">
-        </iframe>
-      </code>
-    </div>
-
-    <div>
-      <h2>Square Avatars</h2>
-      <p>
-        Adding a class <span class="primary-text">square</span> to existing class, will generate a square shaped avatar.
-      </p>
-    </div>
-
-    <div class="square-box avatar-box">
-      <img class="avatar-lg-size square" src="./images/avatar.jpg" alt="avatar">
-      <img class="avatar-md-size square" src="./images/avatar.jpg" alt="avatar">
-      <img class="avatar-sm-size square" src="./images/avatar.jpg" alt="avatar">
-      <img class="avatar-xs-size square" src="./images/avatar.jpg" alt="avatar">
-    </div>
-
-    <div class="code-snippet-display">
-      <code>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=750.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%2520class%253D%2522avatar-lg-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-md-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-sm-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-xs-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-        style="border:0; transform: scale(1); overflow:hidden;"
-        sandbox="allow-scripts allow-same-origin">
+      src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=692.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520badge-number%2522%253E15%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520status-badge-number%2522%253E10%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fab%2520fa-instagram-square%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520badge-number%2522%253E71%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520status-badge-number%2522%253E12%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+      style="border:0; transform: scale(1); overflow:hidden;"
+      sandbox="allow-scripts allow-same-origin">
       </iframe>
       </code>
     </div>
