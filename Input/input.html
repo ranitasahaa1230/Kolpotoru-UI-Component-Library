@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="image Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./image.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Images</h1>
+    <p>
+      Image Components are used to display Images on websites, which are screen
+      responsive. They expand upto the width of the container they are in. They
+      also can be customised to be round shaped.
+    </p>
+
+    <div>
+      <h2>Round Images</h2>
+      <p>
+        You can add class <span class="primary-text">img-round</span> to make
+        your image round shaped.
+      </p>
+    </div>
+
+    <div class="round image-box">
+      <img class="img-round" src="./images/round.jpg" alt="round-image" />
+      <img class="img-round" src="./images/round2.jpg" alt="round-image" />
+    </div>
+
+    <div class="code-snippet-display">
+      <code>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=556.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cimg%2520class%253D%2522img-round%2522%2520src%253D%2522.%252Fimages%252Fround.jpg%2522%2520alt%253D%2522round-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-round%2522%2520src%253D%2522.%252Fimages%252Fround2.jpg%2522%2520alt%253D%2522round-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+          style="border: 0; transform: scale(1); overflow: hidden"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Square Images</h2>
+      <p>
+        Square Images are the square shaped images. You can add class
+        <span class="primary-text">img-square</span> to make your image round
+        shaped.
+      </p>
+    </div>
+
+    <div class="square image-box">
+      <img class="img-square" src="./images/square.jpg" alt="square-image" />
+      <img class="img-square" src="./images/square2.jpg" alt="square-image" />
+    </div>
+
+    <div class="code-snippet-display">
+      <code>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=692.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cimg%2520class%253D%2522img-square%2522%2520src%253D%2522.%252Fimages%252Fsquare.jpg%2522%2520alt%253D%2522square-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-square%2522%2520src%253D%2522.%252Fimages%252Fsquare2.jpg%2522%2520alt%253D%2522square-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+          style="border: 0; transform: scale(1); overflow: hidden"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Responsive Images</h2>
+      <p>
+        You can add class <span class="primary-text">img-responsive</span> to
+        make your image fit the width of container.
+        <br />
+        <span class="note-text"
+          >Note : Resize the browser window, to see the responsive
+          property.</span
+        >
+      </p>
+    </div>
+
+    <div class="responsive image-box">
+      <img
+        class="img-responsive"
+        src="./images/resp.jpg"
+        alt="responsive-image"
+      />
+    </div>
+
+    <div class="code-snippet-display">
+      <code>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=701.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%2520class%253D%2522img-responsive%2522%2520src%253D%2522.%252Fimages%252Fresp.jpg%2522%2520alt%253D%2522responsive-image%2522%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+          style="border: 0; transform: scale(1); overflow: hidden"
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </code>
+    </div>
+  </body>
+</html>
