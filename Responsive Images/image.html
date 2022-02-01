@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ranita Saha">
+    <meta name="description" content="image Component">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./image.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <h1>Badges</h1>
+    <p>
+        Badges are used to highlight an item's status for quick recognition.
+    </p>
+
+    <div>
+      <h2>Profile Badges</h2>
+      <p>
+        Profile Badge is used to show the current status of a user. It can be used with 3 variants : <span class="primary-text">online | offline | dnd</span>
+        <br>
+        Check code below to copy the html part as is.
+      </p>
+    </div>
+
+    <div class="profile-box badge-box">
+      <div class="badge">
+          <img class="avatar" src="images/badge.jpg" alt="avatar">
+          <span class="status-avatar online"></span>
+      </div>
+
+      <div class="badge">
+        <img class="avatar" src="images/badge.jpg" alt="avatar">
+        <span class="status-avatar offline"></span>
+    </div>
+
+    <div class="badge">
+      <img class="avatar" src="images/badge.jpg" alt="avatar">
+      <span class="status-avatar dnd"></span>
+  </div>   
+</div>     
+
+    <div class="code-snippet-display">
+      <code>
+        
+      </code>
+    </div>
+
+    <div>
+      <h2>Text Badges</h2>
+      <p>
+        We have 2 types of text badges that can be integrated with text. Badge with rounded edges and square edges. Font size of badge text is in <span class="primary-text">em</span>. It will change as per the parent element's font-size.
+      </p>
+    </div>
+
+    <div class="text-box badge-box">
+        <h2 class="badge-container">Example of Heading with Badge <span class="badges bg-secondary">New</span></h2>
+        <h3 class="badge-container">Example of Heading with Badge <span class="badges bg-secondary">New</span></h3>
+        <h4 class="badge-container">Example of Heading with Badge <span class="badges bg-secondary round-pill-badge">New</span></h4>
+        <h5 class="badge-container">Example of Heading with Badge <span class="badges bg-primary">New</span></h5>
+        <h6 class="badge-container">Example of Heading with Badge <span class="badges bg-primary">New</span></h6>
+        <div class="badge-container">Example of Body with Badge <span class="badges bg-primary round-pill-badge">New</span></div>
+    </div>
+
+    <div class="code-snippet-display">
+      <code>
+        
+      </code>
+    </div>
+
+    <div>
+      <h2>Icon Badges</h2>
+      <p>
+          Icon badges are used to show cart or notification count, you can use number badge.
+      </p>
+    </div>
+
+    <div class="square-box badge-box">
+        <div class="btn-icon">
+            <span class="badge-container"><i class="fas fa-shopping-cart"></i>
+                <span class="status-badge badge-number">15</span>
+            </span>
+          </div>
+          <div class="btn-icon">
+            <span class="badge-container"><i class="fas fa-envelope"></i>
+                <span class="status-badge status-badge-number">10</span>
+            </span>
+          </div>
+          <div class="btn-icon">
+            <span class="badge-container"><i class="fab fa-instagram-square"></i>
+                <span class="status-badge badge-number">71</span>
+            </span>
+          </div>
+          <div class="btn-icon">
+            <span class="badge-container"><i class="fas fa-bell"></i>
+                <span class="status-badge status-badge-number">12</span>
+            </span>
+          </div>
+    </div>
+
+    <div class="code-snippet-display">
+      <code>
+        
+      </code>
+    </div>
+
+    
+
+</body>
+</html>
