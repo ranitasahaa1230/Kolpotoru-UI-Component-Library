@@ -48,7 +48,7 @@ p{
     display: flex;
     flex-wrap: wrap;
 }
-.fas, .fab{
+.icon{
     font-size: 2rem;
     padding: 0.4rem;
     color: var(--black-bg);
