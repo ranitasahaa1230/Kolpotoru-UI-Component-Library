@@ -1,53 +1,52 @@
-.avatar-box{
-    border:1px solid var(--gray);
-    margin: auto;
-    padding: 1.5rem;
-    border-radius: 6px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
+.avatar-box {
+  border: 1px solid var(--gray);
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.avatars{
-    border-radius: 50%;
-    margin-left: 1.2rem;
-    color:var(--bg-code);
-    border: 2px solid var(--bg-code);
+.avatars {
+  border-radius: 50%;
+  margin-left: 1.2rem;
+  color: var(--bg-code);
+  border: 2px solid var(--bg-code);
 }
 
-.avatar-lg-size{
-    width: 10.9rem;
-    height:10.9rem;
-    font-size: 3rem;
+.avatar-lg-size {
+  width: 10.9rem;
+  height: 10.9rem;
+  font-size: 3rem;
 }
-.avatar-md-size{    
-    margin-top: 1.5rem;
-    width: 8.9rem;
-    height:8.9rem;
-    font-size: 2rem;
+.avatar-md-size {
+  margin-top: 1.5rem;
+  width: 8.9rem;
+  height: 8.9rem;
+  font-size: 2rem;
 }
-.avatar-sm-size{
-    margin-top: 3rem;
-    width: 6.9rem;
-    height:6.9rem;
-    font-size: 1.5rem;
+.avatar-sm-size {
+  margin-top: 3rem;
+  width: 6.9rem;
+  height: 6.9rem;
+  font-size: 1.5rem;
 }
-.avatar-xs-size{
-    margin-top: 4.5rem;
-    width: 4.9rem;
-    height:4.9rem;
-    font-size: 0.8rem;
-}
-
-.avatar-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--darkblue-bg);
-    color: var(--bg-code);
-}
-.square{
-    margin-left: 1.2rem;
-    border-radius: 1.5rem;
+.avatar-xs-size {
+  margin-top: 4.5rem;
+  width: 4.9rem;
+  height: 4.9rem;
+  font-size: 0.8rem;
 }
 
+.avatar-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--darkblue-bg);
+  color: var(--bg-code);
+}
+.square {
+  margin-left: 1.2rem;
+  border-radius: 1.5rem;
+}
