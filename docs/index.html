@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="Travizz UI documentation page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travizz | Docs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="header">
+        <a href="/" aria-current="page" class="header-logo">
+          <img src="/logo-assets/logo.png" alt="logo" class="header-logo"
+        /></a>
+
+        <div class="header-nav">
+          <ul class="navlink">
+            <li><a href="/">Home</a></li>
+            <li><a href="/docs/">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="link-social">
+          <a
+            href="https://github.com/ranitasahaa1230/Travizz-UI-Component-Library"
+            target="_blank"
+            class="nav-pills"
+            ><i class="fab fa-github nav-icons"></i
+          ></a>
+          <a
+            href="https://twitter.com/Ifullofsunshine"
+            target="_blank"
+            class="nav-pills"
+            ><i class="fab fa-twitter nav-icons"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
+            target="_blank"
+            class="nav-pills"
+            ><i class="fab fa-linkedin nav-icons"></i
+          ></a>
+        </div>
+      </nav>
+
+      <div class="container-wrapper">
+        <aside class="sidebar-left">
+          <section class="sidebar-list aside-left-container">
+            <h4 class="sidebar-head">Components</h4>
+            <ul class="nav-links">
+              <li class="nav-link-item">
+                <a href="../Components/Alert/alert.html">Alert</a>
+              </li>
+              <li class="nav-link-item">
+                <a href="../Components/Avatar/avatar.html">Avatar</a>
+              </li>
+              <li class="nav-link-item">
+                <a href="../Components/Badge/badge.html">Badge</a>
+              </li>
+              <li class="nav-link-item">
+                <a href="../Components/Button/button.html">Button</a>
+              </li>
+              <li class="nav-link-item"><a href="#Card">Card</a></li>
+              <li class="nav-link-item"><a href="#Input">Input</a></li>
+              <li class="nav-link-item">
+                <a href="../Components/ResponsiveImages/image.html">Images</a>
+              </li>
+              <li class="nav-link-item"><a href="#Lists">Lists</a></li>
+              <!-- <li class="nav-link-item"><a href="#Modal">Modal</a></li>
+                <li class="nav-link-item"><a href="#Navigation">Navigation</a></li>
+                <li class="nav-link-item"><a href="#Rating">Rating</a></li>
+                <li class="nav-link-item"><a href="#Slider">Slider</a></li>
+                <li class="nav-link-item"><a href="#Grid">Grid Simplified</a></li>
+                <li class="nav-link-item"><a href="#Typography">Typography</a></li>
+                <li class="nav-link-item"><a href="#Toast">Toast</a></li> -->
+            </ul>
+          </section>
+        </aside>
+
+        <main class="mainbar-container">
+          <section class="component-features" id="alert">
+            <h1>Alerts</h1>
+            <p>
+              An alert indicates a brief, meaningful message in a way that draws
+              the user's attention without interrupting the user's task.
+            </p>
+
+            <!--basic variant-->
+            <div>
+              <h2>Basic Alerts</h2>
+              <p>
+                The alert offers four severity levels that set a distinctive
+                icon and color. These are:-<span class="primary-text"
+                  >success alert, warning alert, information alert, danger
+                  alert.</span
+                >
+                <br />
+                You can copy html part from below code snippet.
+              </p>
+            </div>
+
+            <div class="alert-box">
+              <!--success alert-->
+              <div class="alert success-alert alerts-variants">
+                <div><i class="fa fa-check-circle alert-icons"></i></div>
+                <span
+                  ><strong>Success!</strong> This is a success alert — Check it
+                  out!!</span
+                >
+              </div>
+
+              <!--warning alert-->
+              <div class="alert warning-alert alerts-variants">
+                <div>
+                  <i class="fa fa-exclamation-triangle alert-icons"></i>
+                </div>
+                <span
+                  ><strong>Warning!</strong> This is a warning alert — Check it
+                  out!!</span
+                >
+              </div>
+
+              <!--info alert-->
+              <div class="alert info-alert alerts-variants">
+                <div><i class="fa fa-info-circle alert-icons"></i></div>
+                <span
+                  ><strong>Information!</strong> This is an info alert — Check
+                  it out!!</span
+                >
+              </div>
+
+              <!--error alert-->
+              <div class="alert error-alert alerts-variants">
+                <div><i class="fa fa-exclamation-circle alert-icons"></i></div>
+                <span
+                  ><strong>Error!</strong> This is an error alert — Check it
+                  out!!</span
+                >
+              </div>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253C%21--success%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520success-alert%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253Ci%2520class%253D%2522fa%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253ESuccess%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--warning%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520warning-alert%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253Ci%2520class%253D%2522fa%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EWarning%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--info%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520info-alert%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253Ci%2520class%253D%2522fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EInformation%21%253C%252Fstrong%253E%2520This%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--error%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520error-alert%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EError%21%253C%252Fstrong%253E%2520This%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <!--outlined variant-->
+            <div>
+              <h2>Outlined Alerts</h2>
+              <p>
+                Outline alerts are created by using<span class="primary-text"
+                  >alert class,</span
+                >followed by<span class="primary-text">outline-variant</span
+                >.<br />
+                You can copy html part from below code snippet.
+              </p>
+            </div>
+
+            <div class="outlined-box">
+              <!--success alert-->
+              <div class="alert outline-success alerts-variants">
+                <span
+                  ><strong>Success!</strong> This is a success alert — Check it
+                  out!!</span
+                >
+              </div>
+
+              <!--warning alert-->
+              <div class="alert outline-warning alerts-variants">
+                <span
+                  ><strong>Warning!</strong> This is a warning alert — Check it
+                  out!!</span
+                >
+              </div>
+
+              <!--info alert-->
+              <div class="alert outline-info alerts-variants">
+                <span
+                  ><strong>Information!</strong> This is an info alert — Check
+                  it out!!</span
+                >
+              </div>
+
+              <!--error alert-->
+              <div class="alert outline-error alerts-variants">
+                <span
+                  ><strong>Error!</strong> This is an error alert — Check it
+                  out!!</span
+                >
+              </div>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2520%253C%21--success%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-success%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253ESuccess%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--warning%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-warning%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EWarning%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--info%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-info%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EInformation%21%253C%252Fstrong%253E%2520This%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--error%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-error%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EError%21%253C%252Fstrong%253E%2520This%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <!--filled variant-->
+            <div>
+              <h2>Filled Alerts</h2>
+              <p>
+                Filled alerts are created by using<span class="primary-text"
+                  >alert class,</span
+                >followed by<span class="primary-text">filled-variant</span
+                >.<br />
+                You can copy html part from below code snippet.
+              </p>
+            </div>
+
+            <div class="filled-box">
+              <!--success alert-->
+              <div class="alert filled-success alerts-variants">
+                <span
+                  ><strong>Success!</strong> This is a success alert — Check it
+                  out!!</span
+                >
+              </div>
+
+              <!--warning alert-->
+              <div class="alert filled-warning alerts-variants">
+                <span
+                  ><strong>Warning!</strong> This is a warning alert — Check it
+                  out!!</span
+                >
+              </div>
+
+              <!--info alert-->
+              <div class="alert filled-info alerts-variants">
+                <span
+                  ><strong>Information!</strong> This is an info alert — Check
+                  it out!!</span
+                >
+              </div>
+
+              <!--error alert-->
+              <div class="alert filled-error alerts-variants">
+                <span
+                  ><strong>Error!</strong> This is an error alert — Check it
+                  out!!</span
+                >
+              </div>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253C%21--success%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520filled-success%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253ESuccess%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--warning%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520filled-warning%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EWarning%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--info%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520filled-info%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EInformation%21%253C%252Fstrong%253E%2520This%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2509%2509%253C%21--error%2520alert--%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520filled-error%2520alerts-variants%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cstrong%253EError%21%253C%252Fstrong%253E%2520This%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520Check%2520it%2520out%21%21%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </section>
+          <hr class="component-separator" />
+
+          <section class="component-features" id="avatars">
+            <h1>Avatar</h1>
+            <p>
+              The Avatar component is used to represent a user, and displays the
+              profile picture or Initials.
+            </p>
+
+            <div>
+              <h2>Image Avatars</h2>
+              <p>
+                Avatar is available in 4 different sizes. You can use image in
+                Avatar. You need to include class
+                <span class="primary-text">avatar</span> and for size add class
+                according to size
+                <span class="primary-text"
+                  >avatar-lg-size, avatar-md-size, avatar-sm-size,
+                  avatar-xs-size</span
+                >(e.g.
+                <span class="primary-text">class="avatar avatar-lg-size"</span>)
+                <br />
+                Copy the styles of different avatars and use it in your code.
+              </p>
+            </div>
+
+            <div class="img-box avatar-box">
+              <img
+                class="avatars avatar-lg-size"
+                src="../Components/images/travel.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatars avatar-md-size"
+                src="../Components/images/travel.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatars avatar-sm-size"
+                src="../Components/images/travel.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatars avatar-xs-size"
+                src="../Components/images/travel.jpg"
+                alt="avatar"
+              />
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=802.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cimg%2520class%253D%2522avatar%2520avatar-lg-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-sm-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xs-size%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Letter Avatars</h2>
+              <p>
+                You can use initial letters of user in Avatar as well. You need
+                to include class
+                <span class="primary-text">avatar-text</span> along with
+                <span class="primary-text"> avatar</span> and size class. (e.g.
+                <span class="primary-text"
+                  >class="avatar avatar-lg-size avatar-text"</span
+                >)
+              </p>
+            </div>
+
+            <div class="text-box avatar-box">
+              <div
+                class="avatars avatar-lg-size avatar-text"
+                role="img"
+                alt="avatar"
+              >
+                RS
+              </div>
+              <div
+                class="avatars avatar-md-size avatar-text"
+                role="img"
+                alt="avatar"
+              >
+                RS
+              </div>
+              <div
+                class="avatars avatar-sm-size avatar-text"
+                role="img"
+                alt="avatar"
+              >
+                RS
+              </div>
+              <div
+                class="avatars avatar-xs-size avatar-text"
+                role="img"
+                alt="avatar"
+              >
+                RS
+              </div>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=802.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs-size%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253ERS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Square Avatars</h2>
+              <p>
+                Adding a class <span class="primary-text">square</span> to
+                existing class, will generate a square shaped avatar.
+              </p>
+            </div>
+
+            <div class="square-box avatar-box">
+              <img
+                class="avatar-lg-size square"
+                src="../Components/images/avatar.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-md-size square"
+                src="../Components/images/avatar.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-sm-size square"
+                src="../Components/images/avatar.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-xs-size square"
+                src="../Components/images/avatar.jpg"
+                alt="avatar"
+              />
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=750.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%2520class%253D%2522avatar-lg-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-md-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-sm-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-xs-size%2520square%2522%2520src%253D%2522.%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </section>
+          <hr class="component-separator" />
+
+          <section class="component-features" id="badge">
+            <h1>Badges</h1>
+            <p>
+              Badges are used to highlight an item's status for quick
+              recognition.
+            </p>
+
+            <div>
+              <h2>Profile Badges</h2>
+              <p>
+                Profile Badge is used to show the current status of a user. It
+                can be used with 3 variants :
+                <span class="primary-text">online | offline | dnd</span>
+                <br />
+                Check code below to copy the html part as is.
+              </p>
+            </div>
+
+            <div class="profile-box badge-box">
+              <div class="badge">
+                <img
+                  class="avatar"
+                  src="../Components/images/badge.jpg"
+                  alt="avatar"
+                />
+                <span class="status-avatar online"></span>
+              </div>
+
+              <div class="badge">
+                <img
+                  class="avatar"
+                  src="../Components/images/badge.jpg"
+                  alt="avatar"
+                />
+                <span class="status-avatar offline"></span>
+              </div>
+
+              <div class="badge">
+                <img
+                  class="avatar"
+                  src="../Components/images/badge.jpg"
+                  alt="avatar"
+                />
+                <span class="status-avatar dnd"></span>
+              </div>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=802.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520offline%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522images%252Ftravel.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520dnd%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Text Badges</h2>
+              <p>
+                We have 2 types of text badges that can be integrated with text.
+                Badge with rounded edges and square edges. Font size of badge
+                text is in<span class="primary-text">em</span>. It will change
+                as per the parent element's font-size.
+              </p>
+            </div>
+
+            <div class="text-badge badge-box">
+              <h2 class="badge-container">
+                Example of Heading with Badge
+                <span class="badges bg-secondary">New</span>
+              </h2>
+              <h3 class="badge-container">
+                Example of Heading with Badge
+                <span class="badges bg-secondary">New</span>
+              </h3>
+              <h4 class="badge-container">
+                Example of Heading with Badge
+                <span class="badges bg-secondary round-pill-badge">New</span>
+              </h4>
+              <h5 class="badge-container">
+                Example of Heading with Badge
+                <span class="badges bg-primary">New</span>
+              </h5>
+              <h6 class="badge-container">
+                Example of Heading with Badge
+                <span class="badges bg-primary">New</span>
+              </h6>
+              <div class="badge-container">
+                Example of Body with Badge
+                <span class="badges bg-primary round-pill-badge">New</span>
+              </div>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=653.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Ch2%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-secondary%2522%253ENew%253C%252Fspan%253E%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-secondary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-primary%2522%253ENew%253C%252Fspan%253E%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-primary%2522%253ENew%253C%252Fspan%253E%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522badge-container%2522%253EExample%2520of%2520Body%2520with%2520Badge%2520%253Cspan%2520class%253D%2522badges%2520bg-primary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Icon Badges</h2>
+              <p>
+                Icon badges are used to show cart or notification count, you can
+                use number badge.
+              </p>
+            </div>
+
+            <div class="square-box badge-box">
+              <div class="badge-icon">
+                <span class="badge-container"
+                  ><i class="fas fa-shopping-cart icon"></i>
+                  <span class="status-badge badge-number">15</span>
+                </span>
+              </div>
+              <div class="badge-icon">
+                <span class="badge-container"
+                  ><i class="fas fa-envelope icon"></i>
+                  <span class="status-badge status-badge-number">10</span>
+                </span>
+              </div>
+              <div class="badge-icon">
+                <span class="badge-container"
+                  ><i class="fab fa-instagram-square icon"></i>
+                  <span class="status-badge badge-number">71</span>
+                </span>
+              </div>
+              <div class="badge-icon">
+                <span class="badge-container"
+                  ><i class="fas fa-bell icon"></i>
+                  <span class="status-badge status-badge-number">12</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=692.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520badge-number%2522%253E15%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520status-badge-number%2522%253E10%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fab%2520fa-instagram-square%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520badge-number%2522%253E71%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-container%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520status-badge-number%2522%253E12%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </section>
+          <hr class="component-separator" />
+
+          <section class="component-features" id="button">
+            <h1>Buttons</h1>
+            <p>
+              Buttons are also called as call to action. Buttons allow users to
+              take actions, and make choices, with a single tap.
+            </p>
+
+            <div>
+              <h2>Primary Button Styles</h2>
+              <p>
+                Whenever you want your user to click on a link or button, use
+                primary style buttons. You can directly copy below html code and
+                use it in your app.
+              </p>
+            </div>
+
+            <div class="btn-primary-box btn-box">
+              <button class="btn btn-solid-primary btn-variant">
+                Primary-Solid
+              </button>
+              <button class="btn btn-outline-primary btn-variant">
+                Primary-Outline
+              </button>
+              <button class="link-text link-text-primary">Primary-Text</button>
+              <button class="btn btn-icon-primary">
+                <span class="btn-icon"
+                  ><i class="fas fa-shopping-cart button-icons"></i
+                ></span>
+              </button>
+              <button class="btn btn-text-icon-primary btn-variant">
+                <span class="btn-icon"
+                  ><i class="fas fa-shopping-cart button-icons"></i></span
+                >Add to Cart
+              </button>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2522%253EPrimary-Solid%253C%252Fbutton%253E%2520%2520%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary-Outline%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522link-text%2520link-text-primary%2522%253EPrimary-Text%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2509%2509%2509%2509%253C%252Fspan%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Secondary Button Styles</h2>
+              <p>
+                If you want user not to pay attention to buttons then use
+                Secondary buttons. You can directly copy below html code and use
+                it in your app.
+              </p>
+            </div>
+
+            <div class="btn-secondary-box btn-box">
+              <button class="btn btn-solid-secondary btn-variant">Solid</button>
+              <button class="btn btn-outline-secondary btn-variant">
+                Outline
+              </button>
+              <button class="link-text link-text-secondary">Text Link</button>
+              <button class="btn btn-icon-secondary">
+                <span class="btn-icon"
+                  ><i class="fas fa-share-square button-icons"></i
+                ></span>
+              </button>
+              <button class="btn btn-text-icon-secondary">
+                <span class="btn-icon"
+                  ><i class="fas fa-trash button-icons"></i></span
+                >Delete
+              </button>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-secondary%2522%253ESolid%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253EOutline%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522link-text%2520link-text-secondary%2522%253EText%2520Link%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon-secondary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-square%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2509%2509%2509%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-secondary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%2509%2509%2509%2509%2509%2509%253C%252Fspan%253EDelete%253C%252Fbutton%253E%2520%250A%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Disabled Button Styles</h2>
+              <p>
+                If you want to style disabled button add
+                <span class="primary-text">btn-disabled</span> class and you are
+                good to go.
+              </p>
+            </div>
+
+            <div class="btn-disabled-box btn-box">
+              <button class="btn btn-solid-primary btn-disabled btn-variant">
+                Primary-Button
+              </button>
+              <button
+                class="btn btn-text-icon-secondary btn-disabled btn-variant"
+              >
+                <span class="btn-icon"
+                  ><i class="fas fa-trash button-icons"></i></span
+                >Delete
+              </button>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520btn-disabled%2522%253EPrimary-Button%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-secondary%2520btn-disabled%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%2509%2509%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Button with Icon Styles</h2>
+              <p>
+                All the variants of Button with Icon are also available. You can
+                add
+                <span class="primary-text">btn-lg-size, btn-sm-size</span> class
+                for large and small size respectively.
+              </p>
+            </div>
+
+            <div class="btn-size-box btn-box">
+              <button class="btn btn-solid-primary btn-lg-size btn-variant">
+                <span class="btn-icon"
+                  ><i class="fas fa-shopping-basket button-icons"></i></span
+                >Large-Continue Shopping
+              </button>
+              <button class="btn btn-solid-primary btn-sm-size btn-variant">
+                <span class="btn-icon"
+                  ><i class="fas fa-arrow-circle-left button-icons"></i></span
+                >Small-Go Back
+              </button>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=739&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520btn-lg-size%2520btn-variant%2522%253E%253Cspan%2520%2509%2509%2509class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-basket%2522%253E%253C%252Fi%253E%253C%252Fspan%253ELarge-Continue%2520%2509%2509%2520Shopping%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520btn-sm-size%2520btn-variant%2522%253E%253Cspan%2520%2509%2509%2509class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-arrow-circle-left%2522%253E%253C%252Fi%253E%253C%252Fspan%253ESmall-Go%2520%2509%2509%2509Back%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Social Button Styles</h2>
+              <p>
+                Use your respective social media links in the
+                <span class="primary-text">href of anchor tag</span>.
+              </p>
+            </div>
+
+            <div class="btn-social-box btn-box">
+              <!--twitter-->
+              <button class="btn-social">
+                <a href="https://twitter.com/Ifullofsunshine" target="_blank">
+                  <i class="fab fa-twitter button-fab-icons"></i>
+                </a>
+              </button>
+              <!--linked in-->
+              <button class="btn-social">
+                <a
+                  href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin button-fab-icons"></i>
+                </a>
+              </button>
+              <!--github-->
+              <button class="btn-social">
+                <a href="https://github.com/ranitasahaa1230" target="_blank">
+                  <i class="fab fa-github button-fab-icons"></i>
+                </a>
+              </button>
+              <!--instagram-->
+              <button class="btn-social">
+                <a
+                  href="https://www.instagram.com/suitcase_full_of_sunshine/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram button-fab-icons"></i>
+                </a>
+              </button>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=760&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2520%253C%21--twitter--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Ftwitter.com%252FIfullofsunshine%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-twitter%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--linked%2520in--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fwww.linkedin.com%252Fin%252Fsaharanitaa1230dreamer%252F%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-linkedin%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--github--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fgithub.com%252Franitasahaa1230%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-github%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--instagram--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fwww.instagram.com%252Fsuitcase_full_of_sunshine%252F%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-instagram%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Floating Action Button</h2>
+              <p>
+                Floating-action buttons can be customized by adding the
+                font-awesome icon of your choice. This button will be fixed to
+                right-bottom corner.
+              </p>
+            </div>
+
+            <div class="btn-floating-box btn-box">
+              <button class="btn btn-float-action">
+                <i class="fas fa-plus button-icons"></i>
+              </button>
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=695&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522btn-floating-box%2520btn-box%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-float-action%2522%253E%253Ci%2520class%253D%2522fas%2520fa-%2509%2509%2509%2509plus%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </section>
+          <hr class="component-separator" />
+
+          <section class="component-features" id="card"></section>
+          <hr class="component-separator" />
+
+          <section class="component-features" id="input"></section>
+          <hr class="component-separator" />
+
+          <section class="component-features" id="responsive-images">
+            <h1>Images</h1>
+            <p>
+              Image Components are used to display Images on websites, which are
+              screen responsive. They expand upto the width of the container
+              they are in. They also can be customised to be round shaped.
+            </p>
+
+            <div>
+              <h2>Round Images</h2>
+              <p>
+                You can add class <span class="primary-text">img-round</span> to
+                make your image round shaped.
+              </p>
+            </div>
+
+            <div class="round image-box">
+              <img
+                class="img-round"
+                src="../Components/images/round.jpg"
+                alt="round-image"
+              />
+              <img
+                class="img-round"
+                src="../Components/images/round2.jpg"
+                alt="round-image"
+              />
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=556.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cimg%2520class%253D%2522img-round%2522%2520src%253D%2522.%252Fimages%252Fround.jpg%2522%2520alt%253D%2522round-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-round%2522%2520src%253D%2522.%252Fimages%252Fround2.jpg%2522%2520alt%253D%2522round-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Square Images</h2>
+              <p>
+                Square Images are the square shaped images. You can add class
+                <span class="primary-text">img-square</span> to make your image
+                round shaped.
+              </p>
+            </div>
+
+            <div class="square image-box">
+              <img
+                class="img-square"
+                src="../Components/images/square.jpg"
+                alt="square-image"
+              />
+              <img
+                class="img-square"
+                src="../Components/images/square2.jpg"
+                alt="square-image"
+              />
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=692.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cimg%2520class%253D%2522img-square%2522%2520src%253D%2522.%252Fimages%252Fsquare.jpg%2522%2520alt%253D%2522square-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-square%2522%2520src%253D%2522.%252Fimages%252Fsquare2.jpg%2522%2520alt%253D%2522square-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div>
+              <h2>Responsive Images</h2>
+              <p>
+                You can add class
+                <span class="primary-text">img-responsive</span> to make your
+                image fit the width of container.
+                <br />
+                <span class="note-text"
+                  >Note : Resize the browser window, to see the responsive
+                  property.</span
+                >
+              </p>
+            </div>
+
+            <div class="responsive image-box">
+              <img
+                class="img-responsive"
+                src="../Components/images/resp.jpg"
+                alt="responsive-image"
+              />
+            </div>
+
+            <div class="code-snippet-display">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=701.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%2520class%253D%2522img-responsive%2522%2520src%253D%2522.%252Fimages%252Fresp.jpg%2522%2520alt%253D%2522responsive-image%2522%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </section>
+          <hr class="component-separator" />
+
+          <section class="component-features" id="lists"></section>
+          <hr class="component-separator" />
+        </main>
+      </div>
+
+      <footer class="footer">
+        <!-- <div>Mad with by -Ranita Saha</div> -->
+      </footer>
+    </div>
+  </body>
+</html>
