@@ -1,0 +1,38 @@
+.image-box {
+  border: 1px solid var(--gray);
+  margin: auto;
+  /* width: 80%; */
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.primary-text {
+  color: var(--text-color);
+}
+.note-text {
+  color: var(--blue);
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.img-round {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  margin: 1.2rem;
+  object-fit: cover;
+}
+.img-square {
+  height: 13rem;
+  width: 16rem;
+  margin: 1.2rem;
+  object-fit: cover;
+}
