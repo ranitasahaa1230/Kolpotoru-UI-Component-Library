@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Ranita Saha">
-    <meta name="description" content="button Component">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="button Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button</title>
     <link
       rel="stylesheet"
@@ -14,170 +14,307 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./button.css" rel="stylesheet" />
-</head>
-<body>
-    
-    <h1>Buttons</h1>
-    <p>
-        Buttons are also called as call to action. Buttons allow users to take actions, and make choices, with a single tap.
-    </p>
+    <link href="../travizz.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <a href="/" aria-current="page" class="header-logo">
+        <img src="/logo-assets/logo.png" alt="logo" class="header-logo"
+      /></a>
 
-    <div>
-      <h2>Primary Button Styles</h2>
-      <p>
-        Whenever you want your user to click on a link or button, use primary style buttons.
-        You can directly copy below html code and use it in your app.
-      </p>
-    </div>
-
-    <div class="btn-primary-box btn-box">
-      
-      <button class="btn btn-solid-primary btn-variant">Primary-Solid</button>  
-<button class="btn btn-outline-primary btn-variant">Primary-Outline</button>
-<button class="link-text link-text-primary">Primary-Text</button>
-<button class="btn btn-icon-primary"><span class="btn-icon"><i class="fas fa-shopping-cart"></i></span></button>
-<button class="btn btn-text-icon-primary btn-variant"><span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>Add to Cart</button>      
-    </div>     
-
-    <div class="code-snippet-display">
-      <code>
-        <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2522%253EPrimary-Solid%253C%252Fbutton%253E%2520%2520%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary-Outline%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522link-text%2520link-text-primary%2522%253EPrimary-Text%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2509%2509%2509%2509%253C%252Fspan%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520"
-        style="border:0; transform: scale(1); overflow:hidden;"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
-      </code>
-    </div>
-
-    <div>
-        <h2>Secondary Button Styles</h2>
-        <p>
-        If you want user not to pay attention to buttons then use Secondary buttons.
-          You can directly copy below html code and use it in your app.
-        </p>
+      <div class="header-nav">
+        <ul class="navlink">
+          <li><a href="/">Home</a></li>
+          <li><a href="/docs/">Documentation</a></li>
+        </ul>
       </div>
-  
-      <div class="btn-secondary-box btn-box">
-        <button class="btn btn-solid-secondary btn-variant">Solid</button>
-        <button class="btn btn-outline-secondary btn-variant">Outline</button>
-        <button class="link-text link-text-secondary">Text Link</button>
-        <button class="btn btn-icon-secondary"><span class="btn-icon"><i class="fas fa-share-square"></i></span></button>
-        <button class="btn btn-text-icon-secondary"><span class="btn-icon"><i class="fas fa-trash"></i></span>Delete</button>
-    </div>
-  
-      <div class="code-snippet-display">
-        <code>
-          <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-secondary%2522%253ESolid%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253EOutline%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522link-text%2520link-text-secondary%2522%253EText%2520Link%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon-secondary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-square%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2509%2509%2509%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-secondary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%2509%2509%2509%2509%2509%2509%253C%252Fspan%253EDelete%253C%252Fbutton%253E%2520%250A%2520%2520%2520%2520%2520%2520"
-          style="border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        </code>
+      <div class="link-social">
+        <a
+          href="https://github.com/ranitasahaa1230/Travizz-UI-Component-Library"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-github nav-icons"></i
+        ></a>
+        <a
+          href="https://twitter.com/Ifullofsunshine"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-twitter nav-icons"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-linkedin nav-icons"></i
+        ></a>
       </div>
-  
-      <div>
-        <h2>Disabled Button Styles</h2>
-        <p>
-            If you want to style disabled button add <span class="primary-text">btn-disabled</span> class and you are good to go.</p>
-      </div>
-  
-      <div class="btn-disabled-box btn-box">
-        <button class="btn btn-solid-primary btn-disabled btn-variant">Primary-Button</button>
-        <button class="btn btn-text-icon-secondary btn-disabled btn-variant"><span class="btn-icon"><i class="fas fa-trash"></i></span>Delete</button>
-    </div>
+    </nav>
 
-        <div class="code-snippet-display">
+    <div class="container-wrapper">
+      <aside class="sidebar-left">
+        <section class="sidebar-list aside-left-container">
+          <h4 class="sidebar-head">Components</h4>
+          <ul class="nav-links">
+            <li class="nav-link-item">
+              <a href="../Alert/alert.html">Alert</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="nav-link-item"><a href="#">Button</a></li>
+            <li class="nav-link-item"><a href="#Card">Card</a></li>
+            <li class="nav-link-item"><a href="#Input">Input</a></li>
+            <li class="nav-link-item">
+              <a href="../ResponsiveImages/image.html">Images</a>
+            </li>
+            <!-- <li class="nav-link-item"><a href="#Lists">Lists</a></li>
+                <li class="nav-link-item"><a href="#Modal">Modal</a></li>
+                <li class="nav-link-item"><a href="#Navigation">Navigation</a></li>
+                <li class="nav-link-item"><a href="#Rating">Rating</a></li>
+                <li class="nav-link-item"><a href="#Slider">Slider</a></li>
+                <li class="nav-link-item"><a href="#Grid">Grid Simplified</a></li>
+                <li class="nav-link-item"><a href="#Typography">Typography</a></li>
+                <li class="nav-link-item"><a href="#Toast">Toast</a></li> -->
+          </ul>
+        </section>
+      </aside>
+
+      <main class="mainbar-container">
+        <section class="component-features" id="button">
+          <h1>Buttons</h1>
+          <p>
+            Buttons are also called as call to action. Buttons allow users to
+            take actions, and make choices, with a single tap.
+          </p>
+
+          <div>
+            <h2>Primary Button Styles</h2>
+            <p>
+              Whenever you want your user to click on a link or button, use
+              primary style buttons. You can directly copy below html code and
+              use it in your app.
+            </p>
+          </div>
+
+          <div class="btn-primary-box btn-box">
+            <button class="btn btn-solid-primary btn-variant">
+              Primary-Solid
+            </button>
+            <button class="btn btn-outline-primary btn-variant">
+              Primary-Outline
+            </button>
+            <button class="link-text link-text-primary">Primary-Text</button>
+            <button class="btn btn-icon-primary">
+              <span class="btn-icon"
+                ><i class="fas fa-shopping-cart button-icons"></i
+              ></span>
+            </button>
+            <button class="btn btn-text-icon-primary btn-variant">
+              <span class="btn-icon"
+                ><i class="fas fa-shopping-cart button-icons"></i></span
+              >Add to Cart
+            </button>
+          </div>
+
+          <div class="code-snippet-display">
             <code>
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520btn-disabled%2522%253EPrimary-Button%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-secondary%2520btn-disabled%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%2509%2509%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520"
-              style="border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2522%253EPrimary-Solid%253C%252Fbutton%253E%2520%2520%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary-Outline%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522link-text%2520link-text-primary%2522%253EPrimary-Text%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-primary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2509%2509%2509%2509%253C%252Fspan%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Secondary Button Styles</h2>
+            <p>
+              If you want user not to pay attention to buttons then use
+              Secondary buttons. You can directly copy below html code and use
+              it in your app.
+            </p>
+          </div>
+
+          <div class="btn-secondary-box btn-box">
+            <button class="btn btn-solid-secondary btn-variant">Solid</button>
+            <button class="btn btn-outline-secondary btn-variant">
+              Outline
+            </button>
+            <button class="link-text link-text-secondary">Text Link</button>
+            <button class="btn btn-icon-secondary">
+              <span class="btn-icon"
+                ><i class="fas fa-share-square button-icons"></i
+              ></span>
+            </button>
+            <button class="btn btn-text-icon-secondary">
+              <span class="btn-icon"
+                ><i class="fas fa-trash button-icons"></i></span
+              >Delete
+            </button>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-secondary%2522%253ESolid%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253EOutline%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522link-text%2520link-text-secondary%2522%253EText%2520Link%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon-secondary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-square%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2509%2509%2509%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-secondary%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%2509%2509%2509%2509%2509%2509%253C%252Fspan%253EDelete%253C%252Fbutton%253E%2520%250A%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Disabled Button Styles</h2>
+            <p>
+              If you want to style disabled button add
+              <span class="primary-text">btn-disabled</span> class and you are
+              good to go.
+            </p>
+          </div>
+
+          <div class="btn-disabled-box btn-box">
+            <button class="btn btn-solid-primary btn-disabled btn-variant">
+              Primary-Button
+            </button>
+            <button
+              class="btn btn-text-icon-secondary btn-disabled btn-variant"
+            >
+              <span class="btn-icon"
+                ><i class="fas fa-trash button-icons"></i></span
+              >Delete
+            </button>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520btn-disabled%2522%253EPrimary-Button%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-text-icon-secondary%2520btn-disabled%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%2509%2509%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
             </code>
           </div>
 
           <div>
             <h2>Button with Icon Styles</h2>
-            <p>All the variants of Button with Icon are also available. You can add <span class="primary-text">btn-lg-size, btn-sm-size</span> class for large and small size respectively.</p>
+            <p>
+              All the variants of Button with Icon are also available. You can
+              add
+              <span class="primary-text">btn-lg-size, btn-sm-size</span> class
+              for large and small size respectively.
+            </p>
           </div>
-      
+
           <div class="btn-size-box btn-box">
-            <button class="btn btn-solid-primary btn-lg-size btn-variant"><span class="btn-icon"><i class="fas fa-shopping-basket"></i></span>Large-Continue Shopping</button>
-            <button class="btn btn-solid-primary btn-sm-size btn-variant"><span class="btn-icon"><i class="fas fa-arrow-circle-left"></i></span>Small-Go Back</button>
-        </div>
-    
-            <div class="code-snippet-display">
-                <code>
-                  <iframe
+            <button class="btn btn-solid-primary btn-lg-size btn-variant">
+              <span class="btn-icon"
+                ><i class="fas fa-shopping-basket button-icons"></i></span
+              >Large-Continue Shopping
+            </button>
+            <button class="btn btn-solid-primary btn-sm-size btn-variant">
+              <span class="btn-icon"
+                ><i class="fas fa-arrow-circle-left button-icons"></i></span
+              >Small-Go Back
+            </button>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=739&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520btn-lg-size%2520btn-variant%2522%253E%253Cspan%2520%2509%2509%2509class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-basket%2522%253E%253C%252Fi%253E%253C%252Fspan%253ELarge-Continue%2520%2509%2509%2520Shopping%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2520btn-sm-size%2520btn-variant%2522%253E%253Cspan%2520%2509%2509%2509class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-arrow-circle-left%2522%253E%253C%252Fi%253E%253C%252Fspan%253ESmall-Go%2520%2509%2509%2509Back%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                style="border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
               </iframe>
-                </code>
-              </div>
+            </code>
+          </div>
 
-              <div>
-                <h2>Social Button Styles</h2>
-                <p>Use your respective social media links in the <span class="primary-text">href of anchor tag</span>.</p>
-              </div>
+          <div>
+            <h2>Social Button Styles</h2>
+            <p>
+              Use your respective social media links in the
+              <span class="primary-text">href of anchor tag</span>.
+            </p>
+          </div>
 
-              <div class="btn-social-box btn-box">
-                 <!--twitter-->
-                <button class = "btn-social">
-                <a href = "https://twitter.com/Ifullofsunshine" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </button>
-              <!--linked in-->
-              <button class = "btn-social">
-                <a href = "https://www.linkedin.com/in/saharanitaa1230dreamer/" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </button>
-              <!--github-->
-              <button class = "btn-social">
-                <a href = "https://github.com/ranitasahaa1230" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-              </button>
-              <!--instagram-->
-              <button class = "btn-social">
-                <a href = "https://www.instagram.com/suitcase_full_of_sunshine/" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </button>       
-            </div>
-        
-                <div class="code-snippet-display">
-                    <code>
-                      <iframe
-                      src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=760&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2520%253C%21--twitter--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Ftwitter.com%252FIfullofsunshine%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-twitter%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--linked%2520in--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fwww.linkedin.com%252Fin%252Fsaharanitaa1230dreamer%252F%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-linkedin%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--github--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fgithub.com%252Franitasahaa1230%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-github%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--instagram--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fwww.instagram.com%252Fsuitcase_full_of_sunshine%252F%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-instagram%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520"
-                      style="border:0; transform: scale(1); overflow:hidden;"
-                      sandbox="allow-scripts allow-same-origin">
-                  </iframe>
-                    </code>
-                  </div>
-            
-                  <div>
-                    <h2>Floating Action Button</h2>
-                    <p>Floating-action buttons can be customized by adding the font-awesome icon of your choice. This button will be fixed to right-bottom corner.</p>
-                  </div>
-              
-                  <div class="btn-floating-box btn-box">                    
-                    <button class="btn btn-float-action"><i class="fas fa-plus"></i></button>             
-                  </div>
-            
-                    <div class="code-snippet-display">
-                        <code>
-                          <iframe
-                          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=695&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522btn-floating-box%2520btn-box%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-float-action%2522%253E%253Ci%2520class%253D%2522fas%2520fa-%2509%2509%2509%2509plus%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                          style="border:0; transform: scale(1); overflow:hidden;"
-                          sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                        </code>
-                      </div>
+          <div class="btn-social-box btn-box">
+            <!--twitter-->
+            <button class="btn-social">
+              <a href="https://twitter.com/Ifullofsunshine" target="_blank">
+                <i class="fab fa-twitter button-fab-icons"></i>
+              </a>
+            </button>
+            <!--linked in-->
+            <button class="btn-social">
+              <a
+                href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin button-fab-icons"></i>
+              </a>
+            </button>
+            <!--github-->
+            <button class="btn-social">
+              <a href="https://github.com/ranitasahaa1230" target="_blank">
+                <i class="fab fa-github button-fab-icons"></i>
+              </a>
+            </button>
+            <!--instagram-->
+            <button class="btn-social">
+              <a
+                href="https://www.instagram.com/suitcase_full_of_sunshine/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram button-fab-icons"></i>
+              </a>
+            </button>
+          </div>
 
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=760&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2520%253C%21--twitter--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Ftwitter.com%252FIfullofsunshine%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-twitter%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--linked%2520in--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fwww.linkedin.com%252Fin%252Fsaharanitaa1230dreamer%252F%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-linkedin%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--github--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fgithub.com%252Franitasahaa1230%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-github%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--instagram--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522btn-social%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522https%253A%252F%252Fwww.instagram.com%252Fsuitcase_full_of_sunshine%252F%2522%2520target%253D%2522_blank%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-instagram%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
 
-</body>
+          <div>
+            <h2>Floating Action Button</h2>
+            <p>
+              Floating-action buttons can be customized by adding the
+              font-awesome icon of your choice. This button will be fixed to
+              right-bottom corner.
+            </p>
+          </div>
+
+          <div class="btn-floating-box btn-box">
+            <button class="btn btn-float-action">
+              <i class="fas fa-plus button-icons"></i>
+            </button>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=695&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522btn-floating-box%2520btn-box%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-float-action%2522%253E%253Ci%2520class%253D%2522fas%2520fa-%2509%2509%2509%2509plus%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
