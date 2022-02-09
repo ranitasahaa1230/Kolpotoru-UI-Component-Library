@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="list Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../travizz.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <a href="/" aria-current="page" class="header-logo">
+        <img src="/logo-assets/logo.png" alt="logo" class="header-logo"
+      /></a>
+
+      <div class="header-nav">
+        <ul class="navlink">
+          <li><a href="/">Home</a></li>
+          <li><a href="/docs/">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="link-social">
+        <a
+          href="https://github.com/ranitasahaa1230/Travizz-UI-Component-Library"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-github nav-icons"></i
+        ></a>
+        <a
+          href="https://twitter.com/Ifullofsunshine"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-twitter nav-icons"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-linkedin nav-icons"></i
+        ></a>
+      </div>
+    </nav>
+
+    <div class="container-wrapper">
+      <aside class="sidebar-left">
+        <section class="sidebar-list aside-left-container">
+          <h4 class="sidebar-head">Components</h4>
+          <ul class="nav-links">
+            <li class="nav-link-item"><a href="#">Alert</a></li>
+            <li class="nav-link-item">
+              <a href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Button/button.html">Button</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Card/card.html">Card</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Input">Input</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Responsive Images/image.html">Images</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Lists/list.html">Lists</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Modal">Modal</a></li>
+            <li class="nav-link-item">
+              <a href="#Navigation">Navigation</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Rating">Rating</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Slider">Slider</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Grid/grid.html">Simplified Grid</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Typography/typography.html">Typography</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Toast">Toast</a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="mainbar-container">
+        <section class="component-features" id="alert">
+          <h1>Lists</h1>
+          <p>
+            Lists are continuous, vertical indexes of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+          </p>
+
+          <div>
+            <h2>Simple Lists</h2>
+            <p>
+              If you want list stacked but with no bullet and indentation, then you can add <span class="primary-text">list-style-none</span> class.
+              <br>
+              Class <span class="primary-text">spaced-lists</span> applies padding between two list items.
+            </p>
+          </div>
+
+          <div class="spaced-lists list-style-none">
+            <ul class="spaced-items">
+              <div class="list-title">Categories</div>
+              <li class="list-items">Shoes</li>
+                <li class="list-items">Home</li>
+                <li class="list-items">Smartphones</li>
+                <li class="list-items">Earphones</li>
+                <li class="list-items">Watches</li>
+            </ul>
+
+            </ul>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+             
+            </code>
+          </div>
+
+          <div>
+            <h2>Nested Lists</h2>
+            <p>
+              If you want nested lists, then you can add <span class="primary-text">list-style-none</span> class.
+              <br>
+              Class <span class="primary-text">nested-lists</span> applies padding between two list items.
+            </p>
+          </div>
+
+          <div class="nested-lists list-style-none">
+            <ul class="spaced-items">
+              <div class="list-title">Categories</div>
+              <li class="list-items">Home</li>
+              <div class="collapsable">
+              <li class="list-items">Smartphones</li>
+                  <ul>
+                      <li class="list-items collapsable-items">Apple</li>
+                      <li class="list-items collapsable-items">Realme</li>
+                      <li class="list-items collapsable-items">Samsung</li>
+                  </ul>
+              </div>
+              <li class="list-items">Earphones</li>
+              <li class="list-items">Watches</li>
+          </ul>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe>
+                
+              </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Notification Stacked Lists</h2>
+            <p>
+              Stacked lists may have images , header and additional info as well they are mostly used in notifications
+              <br />
+              You can copy html part from below code snippet.
+            </p>
+          </div>
+
+          <div class="stacked-lists">
+            <ul>
+              <li class="stackedlist-container list-item">
+                <div class="avatar avatar-l">
+                  <img
+                    class="avatar-round"
+                    src="../../assets/SVG/avatargirl.svg"
+                    alt="Avatar-round"
+                  />
+                </div>
+                <div>
+                  <h3>Yayy! Gettin' famous</h3>
+                  <p>There was a like on your post!</p>
+                </div>
+                <div>
+                  <span>1min ago</span>
+                </div>
+              </li>
+              <li class="stackedlist-container list-item">
+                <div class="avatar avatar-l">
+                  <img
+                    class="avatar-round"
+                    src="../../assets/SVG/avatargirl.svg"
+                    alt="Avatar-round"
+                  />
+                </div>
+                <div>
+                  <h3>You might be interested in this</h3>
+                  <p>Students of Neog have once again broke records...</p>
+                </div>
+                <div>
+                  <span>1hr ago</span>
+                </div>
+              </li>
+            </ul>            
+          </div>
+          
+          <div class="code-snippet-display">
+            <code>
+              
+            </code>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
