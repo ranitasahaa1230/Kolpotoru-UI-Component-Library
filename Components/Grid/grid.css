@@ -1,63 +1,63 @@
 .grid-box {
-    border: 1px solid var(--gray);
-    margin: auto;
+  border: 1px solid var(--gray);
+  margin: auto;
   padding: 1.5rem;
   border-radius: 6px;
   margin-bottom: 1.5rem;
-  }
+}
 
-.grid-2-col{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+.grid-2-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.img-grid{
-    border-radius: 4rem 0 0 4rem;
+.img-grid {
+  border-radius: 4rem 0 0 4rem;
 }
-.grid-sample-child{
-    background: var(--online);
-    display: flex;
-    border-radius: 0 4rem 4rem 0;
+.grid-sample-child {
+  background: var(--online);
+  display: flex;
+  border-radius: 0 4rem 4rem 0;
 }
-.flex-center{
-    margin: auto;
-    color: var(--bg-code);
+.flex-center {
+  margin: auto;
+  color: var(--bg-code);
 }
 .grid-3-col {
-	display: grid;
-    gap: 2rem;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
 }
-.card-vertical{
-    box-shadow: 0 2px 2px var(--online);
+.card-vertical {
+  box-shadow: 0 2px 2px var(--online);
 }
-.card-content{
-text-align: center;
+.card-content {
+  text-align: center;
 }
-.card-grid{
-    font-size: 1.6rem;
-   margin: 4px;
+.card-grid {
+  font-size: 1.6rem;
+  margin: 4px;
 }
-.gap-s{
-    font-size: 1.2rem;
+.gap-s {
+  font-size: 1.2rem;
 }
 
-.txt-bold{
-    font-weight: bolder;
+.txt-bold {
+  font-weight: bolder;
 }
-.txt-crossed-off{
-    text-decoration: line-through;
+.txt-crossed-off {
+  text-decoration: line-through;
 }
-.txt-high-light{
-    color: var(--text-color);
+.txt-high-light {
+  color: var(--text-color);
 }
-.grid-icon{
-    cursor: pointer;
+.grid-icon {
+  cursor: pointer;
 }
-.grid-footer-icons{
-    margin:1rem;
-    padding: 10px 14px;
+.grid-footer-icons {
+  margin: 1rem;
+  padding: 10px 14px;
 }
-.card-vertical:hover{
-    background-color:var(--black-bg);
-    color: var(--bg-code);
+.card-vertical:hover {
+  background-color: var(--black-bg);
+  color: var(--bg-code);
 }
