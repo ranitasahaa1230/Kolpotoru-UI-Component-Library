@@ -87,9 +87,7 @@ p {
 ul {
   list-style: none;
 }
-.primary-text {
-  color: var(--text-color);
-}
+
 .nav-icons {
   margin-left: 1rem;
   font-size: 1.5rem;

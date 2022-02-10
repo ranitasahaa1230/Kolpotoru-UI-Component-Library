@@ -1,4 +1,4 @@
-.spaced-lists, .nested-lists{
+.styled-lists{
   border: 1px solid var(--gray);
   margin: auto;
   /* width:80%; */
@@ -35,4 +35,34 @@
 }
 .collapsable-items{
     margin-left: 2rem;
+}
+.spaced-list-items{
+    width: 55rem;
+    max-width: 95%;
+    border: 2px solid var(--black-bg);
+  background: var(--bg-code);
+  margin: 1.2rem;
+  border-radius: 10px;
+
+}
+.stackedlist-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: start;
+  font-weight: 500;
+  margin: 5px;
+}
+.stacked-container{
+  margin:1rem;
+}
+.list-texts{
+  font-size: 1.2rem;
+  color: var(--black-bg);
+}
+.stacked-list-items{
+  font-size: 1.2rem;
+}
+.stackedlist-container:hover{
+  background: var(--blue-border);
 }
