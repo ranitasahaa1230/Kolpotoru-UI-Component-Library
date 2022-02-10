@@ -5,27 +5,27 @@
   border-radius: 6px;
   margin-bottom: 1.5rem;
 }
-.type-1,
-.type-2,
-.type-3,
-.type-4,
-.type-5,
-.type-6 {
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
   margin: 1rem;
 }
-.type-3,
+.heading-3,
 .body-cp-lg {
   font-size: 1.7rem;
 }
-.type-4,
+.heading-4,
 .body-cp-rg {
   font-size: 1.4rem;
 }
-.type-5,
+.heading-5,
 .body-cp-md {
   font-size: 1.2rem;
 }
-.type-6,
+.heading-6,
 .body-cp-sm {
   font-size: 1rem;
 }
