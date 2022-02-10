@@ -11,9 +11,6 @@
   flex-wrap: wrap;
 }
 
-.primary-text {
-  color: var(--text-color);
-}
 .note-text {
   color: var(--blue);
 }
