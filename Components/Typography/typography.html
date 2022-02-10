@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="Typography Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../travizz.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <a href="/" aria-current="page" class="header-logo">
+        <img src="/logo-assets/logo.png" alt="logo" class="header-logo"
+      /></a>
+
+      <div class="header-nav">
+        <ul class="navlink">
+          <li><a href="/">Home</a></li>
+          <li><a href="/docs/">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="link-social">
+        <a
+          href="https://github.com/ranitasahaa1230/Travizz-UI-Component-Library"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-github nav-icons"></i
+        ></a>
+        <a
+          href="https://twitter.com/Ifullofsunshine"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-twitter nav-icons"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-linkedin nav-icons"></i
+        ></a>
+      </div>
+    </nav>
+
+    <div class="container-wrapper">
+      <aside class="sidebar-left">
+        <section class="sidebar-list aside-left-container">
+          <h4 class="sidebar-head">Components</h4>
+          <ul class="nav-links">
+            <li class="nav-link-item"><a href="#">Alert</a></li>
+            <li class="nav-link-item">
+              <a href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Button/button.html">Button</a>
+            </li>
+            <li class="nav-link-item"><a href="#Card">Card</a></li>
+            <li class="nav-link-item"><a href="#Input">Input</a></li>
+            <li class="nav-link-item">
+              <a href="../Responsive Images/image.html">Images</a>
+            </li>
+            <!-- <li class="nav-link-item"><a href="#Lists">Lists</a></li>
+                <li class="nav-link-item"><a href="#Modal">Modal</a></li>
+                <li class="nav-link-item"><a href="#Navigation">Navigation</a></li>
+                <li class="nav-link-item"><a href="#Rating">Rating</a></li>
+                <li class="nav-link-item"><a href="#Slider">Slider</a></li>
+                <li class="nav-link-item"><a href="#Grid">Grid Simplified</a></li>
+                <li class="nav-link-item"><a href="#Typography">Typography</a></li>
+                <li class="nav-link-item"><a href="#Toast">Toast</a></li> -->
+          </ul>
+        </section>
+      </aside>
+
+      <main class="mainbar-container">
+        <section class="component-features" id="alert">
+          <h1>Typography</h1>
+          <p>
+            Documentation and examples for common text utilities to control
+            alignment, weight, and more.
+          </p>
+
+          <div>
+            <h2>Heading Texts</h2>
+            <p>
+              For heading you can use h1, h2, h3, h4, h5, h6 elements.
+              <br />
+              The same font-styling is present for class names
+              <span class="primary-text"
+                >type-1, type-2, type-3, type-4, type-5, type-6</span
+              >
+              class. You can add one of these classes to style the text.
+            </p>
+          </div>
+
+          <div class="typography-box">
+            <h1 class="heading-1">H1-Heading</h1>
+            <h2 class="heading-2">H2-Heading</h2>
+            <h3 class="heading-3">H3-Heading</h3>
+            <h4 class="heading-4">H4-Heading</h4>
+            <h5 class="heading-5">H5-Heading</h5>
+            <h6 class="heading-6">H6-Heading</h6>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=794.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Ch1%2520class%253D%2522type-1%2522%253EH1-Heading%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522type-2%2522%253EH2-Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522type-3%2522%253EH3-Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522type-4%2522%253EH4-Heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522type-5%2522%253EH5-Heading%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522type-6%2522%253EH6-Heading%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Paragraph Texts</h2>
+            <p>
+              For paragraph, you can use p element.
+              <br />
+              The same font-styling is present for class name
+              <span class="primary-text"
+                >body-cp-lg, body-cp-rg, body-cp-md, body-cp-sm</span
+              >
+              class.You can add one of these classes to style the text.
+            </p>
+          </div>
+
+          <div class="typography-box">
+            <p class="body-cp-lg">P-Paragraph-body-copy-large style</p>
+            <p class="body-cp-rg">P-Paragraph-body-copy-regular style</p>
+            <p class="body-cp-md">P-Paragraph-body-copy-medium style</p>
+            <p class="body-cp-sm">P-Paragraph-body-copy-small style</p>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=794.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cp%2520class%253D%2522body-cp-lg%2522%253EP-Paragraph-body-copy-large%2520style%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-cp-rg%2522%253EP-Paragraph-body-copy-regular%2520style%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-cp-md%2522%253EP-Paragraph-body-copy-medium%2520style%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-cp-sm%2522%253EP-Paragraph-body-copy-small%2520style%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Gray Texts</h2>
+            <p>
+              You can get the gray text using
+              <span class="primary-text">.gray</span>.
+              <br />
+              You can copy html part from below code snippet.
+            </p>
+          </div>
+
+          <div class="typography-box">
+            <h3 class="heading-3 gray">H3-Heading</h3>
+            <h4 class="heading-4 gray">H4-Heading</h4>
+            <h5 class="heading-5 gray">H5-Heading</h5>
+
+            <p class="body-cp-rg gray">P-Paragraph-body-copy-large style</p>
+            <p class="body-cp-md gray">P-Paragraph-body-copy-regular style</p>
+            <p class="body-cp-sm gray">P-Paragraph-body-copy-medium style</p>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=686.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Ch3%2520class%253D%2522type-3%2520gray%2522%253EH3-Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522type-4%2520gray%2522%253EH4-Heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522type-5%2520gray%2522%253EH5-Heading%253C%252Fh5%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-cp-rg%2520gray%2522%253EP-Paragraph-body-copy-large%2520style%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-cp-md%2520gray%2522%253EP-Paragraph-body-copy-regular%2520style%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-cp-sm%2520gray%2522%253EP-Paragraph-body-copy-medium%2520style%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Center Texts</h2>
+            <p>
+              To align the text add
+              <span class="primary-text"
+                >text-center, text-left, text-right</span
+              >
+              class to wrapper element.
+              <br />
+              You can copy html part from below code snippet.
+            </p>
+          </div>
+
+          <div class="typography-box">
+            <h3 class="text-center">H3-Heading Text Align Center</h3>
+            <h3 class="text-left">H3-Heading Text Align Left</h3>
+            <h3 class="text-right">H3-Heading Text Align Right</h3>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=686.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Ch3%2520class%253D%2522text-center%2522%253EH3-Heading%2520Text%2520Align%2520Center%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522text-left%2522%253EH3-Heading%2520Text%2520Align%2520Left%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522text-right%2522%253EH3-Heading%2520Text%2520Align%2520Right%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

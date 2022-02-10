@@ -7,6 +7,7 @@
 @import url("./ResponsiveImages/image.css");
 /*@import url('./Input/input.css');
 @import url('./Card/card.css'); */
+@import url("./Typography/typography.css");
 @import url("./Lists/list.css");
 
 *,
@@ -42,6 +43,7 @@
   --gray-bg: #e5e5e5;
   --gray-hover: #adb5bd;
   --blue-color: #3a86ff;
+  --gray-text: #6b705c;
 }
 body {
   font-family: "Roboto Slab", serif;
