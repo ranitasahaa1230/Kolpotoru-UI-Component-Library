@@ -1,0 +1,27 @@
+.modal-box{
+  border: 1px solid var(--gray);
+  margin: auto;
+  /* width:80%; */
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.modal-container{
+    border: 2px solid red;
+    width: 20rem;
+}
+.modal-close-btn{
+    display: flex;
+}
+.modal-footer{
+    padding: 0 12px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+    justify-content: flex-end;
+}
+.modal-footer button:first-child {
+    margin-right: 12px;
+  }
+  
