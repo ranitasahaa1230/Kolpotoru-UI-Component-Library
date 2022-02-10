@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="list Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../travizz.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <a href="/" aria-current="page" class="header-logo">
+        <img src="/logo-assets/logo.png" alt="logo" class="header-logo"
+      /></a>
+
+      <div class="header-nav">
+        <ul class="navlink">
+          <li><a href="/">Home</a></li>
+          <li><a href="/docs/">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="link-social">
+        <a
+          href="https://github.com/ranitasahaa1230/Travizz-UI-Component-Library"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-github nav-icons"></i
+        ></a>
+        <a
+          href="https://twitter.com/Ifullofsunshine"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-twitter nav-icons"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-linkedin nav-icons"></i
+        ></a>
+      </div>
+    </nav>
+
+    <div class="container-wrapper">
+      <aside class="sidebar-left">
+        <section class="sidebar-list aside-left-container">
+          <h4 class="sidebar-head">Components</h4>
+          <ul class="nav-links">
+            <li class="nav-link-item"><a href="#">Alert</a></li>
+            <li class="nav-link-item">
+              <a href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Button/button.html">Button</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Card/card.html">Card</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Input">Input</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Responsive Images/image.html">Images</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Lists/list.html">Lists</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Modal">Modal</a></li>
+            <li class="nav-link-item">
+              <a href="#Navigation">Navigation</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Rating">Rating</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Slider">Slider</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Grid/grid.html">Simplified Grid</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Typography/typography.html">Typography</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Toast">Toast</a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="mainbar-container">
+        <section class="component-features" id="alert">
+          <h1>Lists</h1>
+          <p>
+            Lists are continuous, vertical indexes of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+          </p>
+
+          <div>
+            <h2>Simple Lists</h2>
+            <p>
+              If you want list stacked but with no bullet and indentation, then you can add <span class="primary-text">list-style-none</span> class.
+              <br>
+              Class <span class="primary-text">spaced-lists</span> applies padding between two list items.
+            </p>
+          </div>
+
+          <div class="spaced-lists list-style-none styled-lists">
+            <ul class="spaced-items">
+              <div class="list-title">Categories</div>
+              <li class="list-items">Shoes</li>
+                <li class="list-items">Home</li>
+                <li class="list-items">Smartphones</li>
+                <li class="list-items">Earphones</li>
+                <li class="list-items">Watches</li>
+            </ul>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=646&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522spaced-lists%2520list-style-none%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522spaced-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-title%2522%253ECategories%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253EShoes%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253EHome%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253ESmartphones%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253EEarphones%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253EWatches%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Nested Lists</h2>
+            <p>
+              If you want nested lists, then you can add <span class="primary-text">list-style-none</span> class.
+              <br>
+              Class <span class="primary-text">nested-lists</span> applies padding between two list items.
+            </p>
+          </div>
+
+          <div class="nested-lists list-style-none styled-lists">
+            <ul class="spaced-items">
+              <div class="list-title">Categories</div>
+              <li class="list-items">Home</li>
+              <div class="collapsable">
+              <li class="list-items">Smartphones</li>
+                  <ul>
+                      <li class="list-items collapsable-items">Apple</li>
+                      <li class="list-items collapsable-items">Realme</li>
+                      <li class="list-items collapsable-items">Samsung</li>
+                  </ul>
+              </div>
+              <li class="list-items">Earphones</li>
+              <li class="list-items">Watches</li>
+          </ul>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=687.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522nested-lists%2520list-style-none%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522spaced-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-title%2522%253ECategories%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253EHome%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522collapsable%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253ESmartphones%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2520collapsable-items%2522%253EApple%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2520collapsable-items%2522%253ERealme%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2520collapsable-items%2522%253ESamsung%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253EEarphones%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253EWatches%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Notification Stacked Lists</h2>
+            <p>
+              Stacked lists may have images , header and additional info as well they are mostly used in notifications
+              <br />
+              You can copy html part from below code snippet.
+            </p>
+          </div>
+
+          <div class="stacked-lists styled-lists">
+            <ul class="spaced-list-items">
+              <li class="stackedlist-container list-title">
+                  <img
+                    class="avatars avatar-xs-size stacked-container"
+                    src="../images/stacked_list3.jpg"
+                    alt="Avatar-round"
+                  />
+                  <div class="stacked-flex">
+                  <div class="list-texts">Brunch this weekend?</div>
+                  <div class="stacked-list-items"><span class="list-texts">Ali Afsar</span> - I'll be in your neighborhood doing errands this…</div>
+                </div>
+                </li>
+
+                <li class="stackedlist-container list-title">
+                  <img
+                    class="avatars avatar-xs-size stacked-container"
+                    src="../images/stacked_list2.jpg"
+                    alt="Avatar-round"
+                  />
+                  <div class="stacked-flex">
+                  <div class="list-texts">Summer BBQ</div>
+                  <div class="stacked-list-items"><span class="list-texts">to Scott, Alex, Jennifer</span> - Wish I could come, but I'm out of town this…</div>
+                </div>
+                </li>
+
+                <li class="stackedlist-container">
+                  <img
+                    class="avatars avatar-xs-size stacked-container"
+                    src="../images/stacked_list1.jpg"
+                    alt="Avatar-round"
+                  />
+                  <div class="stacked-flex">
+                  <div class="list-texts">Oui Oui</div>
+                  <div class="stacked-list-items"><span class="list-texts">Sandra Adams</span> - Do you have Paris recommendations? Have you ever…</div>
+                </div>
+                </li>
+
+            </ul>            
+          </div>
+          
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=694.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2520%253Cdiv%2520class%253D%2522stacked-lists%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522spaced-list-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522stackedlist-container%2520list-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatars%2520avatar-xs-size%2520stacked-container%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fimages%252Fstacked_list3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Avatar-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-texts%2522%253EBrunch%2520this%2520weekend%253F%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-list-items%2522%253E%253Cspan%2520class%253D%2522list-texts%2522%253EAli%2520Afsar%253C%252Fspan%253E%2520-%2520I%27ll%2520be%2520in%2520your%2520neighborhood%2520doing%2520errands%2520this%25E2%2580%25A6%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522stackedlist-container%2520list-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatars%2520avatar-xs-size%2520stacked-container%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fimages%252Fstacked_list2.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Avatar-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-texts%2522%253ESummer%2520BBQ%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-list-items%2522%253E%253Cspan%2520class%253D%2522list-texts%2522%253Eto%2520Scott%252C%2520Alex%252C%2520Jennifer%253C%252Fspan%253E%2520-%2520Wish%2520I%2520could%2520come%252C%2520but%2520I%27m%2520out%2520of%2520town%2520this%25E2%2580%25A6%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522stackedlist-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatars%2520avatar-xs-size%2520stacked-container%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fimages%252Fstacked_list1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Avatar-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-texts%2522%253EOui%2520Oui%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-list-items%2522%253E%253Cspan%2520class%253D%2522list-texts%2522%253ESandra%2520Adams%253C%252Fspan%253E%2520-%2520Do%2520you%2520have%2520Paris%2520recommendations%253F%2520Have%2520you%2520ever%25E2%2580%25A6%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            </code>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
