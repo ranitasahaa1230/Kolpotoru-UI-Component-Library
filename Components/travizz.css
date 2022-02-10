@@ -7,6 +7,8 @@
 @import url("./ResponsiveImages/image.css");
 /*@import url('./Input/input.css');
 @import url('./Card/card.css'); */
+@import url("./Lists/list.css");
+@import url("./Grid/grid.css");
 
 *,
 *::before,
@@ -85,6 +87,7 @@ p {
 ul {
   list-style: none;
 }
+
 .nav-icons {
   margin-left: 1rem;
   font-size: 1.5rem;
