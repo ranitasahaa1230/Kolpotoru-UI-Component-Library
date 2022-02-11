@@ -161,5 +161,111 @@
       </iframe>
       </code>
     </div>
+
+    <div>
+      <h2>Input validation</h2>
+      <p>
+        Validation is done while user enters the input.Use the class 'input-validation' on the inputs to use this functionality
+        <br>
+        You can copy html part from below code snippet.
+      </p>
+    </div>
+
+    <div class="formbox input-box">
+      <form class="form" novalidate>
+        <div class="row">
+          <div class="label-container">
+            <label for="name" class="form-label field-required p-md">Enter your name</label>
+          </div>
+      
+          <div class="input-container">
+            <input class="form-field my-sm p-sm border-sm"
+              type="text" id="name" placeholder="Sweet name"
+              required
+            />
+      
+            <div class="form-field-validation-message valid-message">
+              <span><i class="fas fa-check-circle"></i></span>
+              Looks Good!
+            </div>
+      
+            <div class="form-field-validation-message invalid-message">
+              <span><i class="fas fa-info-circle"></i></span>
+              Please enter you name
+            </div>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="label-container">
+            <label for="email" class="form-label field-required p-md">Enter your Email</label>
+          </div>
+          <div class="input-container">
+            <input class="form-field my-sm p-sm border-sm"
+              type="email" id="email"
+              placeholder="john@example.com"
+              required
+            />
+      
+            <div class="form-field-validation-message valid-message">
+              <span><i class="fas fa-check-circle"></i></span>
+              Looks Good!
+            </div>
+      
+            <div class="form-field-validation-message invalid-message">
+              <span><i class="fas fa-info-circle"></i></span>
+              Enter correct email
+            </div>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="label-container">
+            <label for="stateList" class="form-label p-md">Select Gender</label>
+          </div>
+          <div class="input-container">
+            <select class="form-field my-sm p-sm border-sm" id="stateList">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="row checkbox-field">
+          <div class="input-container mr-1">
+            <input class="form-field p-sm border-sm"
+              type="checkbox"
+              id="email"
+              placeholder="john@example.com"
+              required
+            />
+      
+            <div class="form-field-validation-message valid-message">
+              <span><i class="fas fa-check-circle"></i></span>
+              Looks Good!
+            </div>
+      
+            <div class="form-field-validation-message invalid-message">
+              <span><i class="fas fa-info-circle"></i></span>
+              You must agree before submitting
+            </div>
+          </div>
+      
+          <label for="email" class="form-label field-required p-md">Agree to terms and Services</label>
+        </div>
+      
+        <button class="btn btn-primary-outline btn-sm mt-2" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <div class="code-snippet-display">
+      <code> 
+        
+      </code>
+    </div>
+    <script src="./input.js"></script>
   </body>
 </html>
