@@ -10,7 +10,6 @@
 @import url("./Lists/list.css");
 @import url("./Modal/modal.css");
 
-
 *,
 *::before,
 *::after {
@@ -44,6 +43,7 @@
   --gray-bg: #e5e5e5;
   --gray-hover: #adb5bd;
   --blue-color: #3a86ff;
+  --gray-text: #6b705c;
 }
 body {
   font-family: "Roboto Slab", serif;
