@@ -12,6 +12,8 @@
 @import url("./Modal/modal.css");
 @import url("./Grid/grid.css");
 @import url("./Typography/typography.css");
+@import url("./Slider/slider.css");
+
 
 *,
 *::before,
@@ -47,6 +49,7 @@
   --gray-hover: #adb5bd;
   --blue-color: #3a86ff;
   --gray-text: #6b705c;
+  --secondary-green:#560bad;
 }
 body {
   font-family: "Roboto Slab", serif;
