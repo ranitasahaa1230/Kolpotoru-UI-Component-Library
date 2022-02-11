@@ -7,6 +7,10 @@
 @import url("./ResponsiveImages/image.css");
 /*@import url('./Input/input.css');
 @import url('./Card/card.css'); */
+@import url("./Lists/list.css");
+@import url("./Grid/grid.css");
+@import url("./Typography/typography.css");
+
 
 *,
 *::before,
