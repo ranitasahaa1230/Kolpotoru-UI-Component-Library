@@ -1,7 +1,6 @@
 .modal-box {
   border: 1px solid var(--gray);
   margin: auto;
-  /* width:80%; */
   padding: 0.3rem 1rem;
   border-radius: 6px;
   margin-bottom: 1.5rem;
@@ -39,7 +38,7 @@
 }
 .modal-footer {
   display: flex;
-  height: 60px;
+  height:3rem;
   align-items: center;
   justify-content: flex-end;
 }
@@ -49,10 +48,10 @@
 .btn-cancel:hover {
   opacity: 0.7;
 }
-#example-modal-CTA {
+.modal-CTA{
   margin: 1rem;
 }
-#example-modal.show {
+.modal-example.show {
   opacity: 1;
   pointer-events: auto;
   margin: 2rem 5rem;
