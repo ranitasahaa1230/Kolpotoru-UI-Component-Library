@@ -9,6 +9,8 @@
 @import url('./Card/card.css'); */
 @import url("./Lists/list.css");
 @import url("./Modal/modal.css");
+@import url("./Grid/grid.css");
+@import url("./Typography/typography.css");
 
 *,
 *::before,
