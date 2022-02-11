@@ -7,10 +7,9 @@
   margin-bottom: 1.5rem;
 }
 
-.modal-container {
-margin: 2rem 5rem;
-background: var(--blue-border);
-  border: 2px var(--blue-border);
+.modal-container{
+    margin: 2rem 5rem;
+    background: var(--blue-border);
   width: 25rem;
   padding: 12px;
 }
@@ -21,6 +20,7 @@ background: var(--blue-border);
   height: 40px;
   padding:10px;
 }
+
 .modal-header {
   font-size: 1.5rem;
 }
@@ -49,3 +49,19 @@ background: var(--blue-border);
 .btn-cancel:hover{
     opacity: 0.7;
 }
+#example-modal-CTA{
+    margin: 1rem;
+}
+
+ #example-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+    margin: 2rem 5rem;
+    background: var(--blue-border);
+  width: 25rem;
+  padding: 12px;
+  } 
+
+ .modal-alert{
+    display: none;
+  }
