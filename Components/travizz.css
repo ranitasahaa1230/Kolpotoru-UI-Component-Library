@@ -8,6 +8,7 @@
 /*@import url('./Input/input.css');
 @import url('./Card/card.css'); */
 @import url("./Lists/list.css");
+@import url("./Rating/rating.css");
 
 *,
 *::before,
