@@ -8,7 +8,7 @@
 }
 
 .card {
-  width: 20rem;
+  width: 18rem;
   margin: 1rem;
   overflow: hidden;
   height: max-content;
@@ -20,13 +20,14 @@
 }
 .card-text{
   border-radius: 10px;
+  padding:2px;
 }
 .desc,.card-footer{
   font-size: 1.2rem;
   padding: 0 10px;
   margin-bottom: 6px;
 }
-.card-title{
+.simple-card-title{
   margin: 10px 8px;
   padding: 0 4px;
   font-size: 1.6rem;
@@ -43,6 +44,55 @@
   opacity: 0.8;
 }
 .card-img{
-    width: 20rem;
-    height: 16rem;
+    width: 18rem;
+    height: 15rem;
+}
+
+.tag{
+	position: absolute;
+	border-radius:6px;
+	padding: 4px 8px;
+	top: 5%;
+	left: 5%;
+	background-color: var(--text-color);
+	color: var(--bg-code);
+}
+
+.btn-dismiss{
+  position: absolute;
+  top: 5%;
+	right: 5%;
+  outline: none;
+  cursor: pointer;
+}
+.card-btn-dismiss{
+  color:var(--online);
+}
+.btn-dismiss:hover{
+  border: 2px solid var(--black-bg);
+}
+
+.overlay-card{
+  opacity: 0.4;
+  pointer-events: none;
+}
+.text-overlay{
+  color: var(--black-bg);
+  height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.8;
+	background-color: var(--secondary-color);
+	font-weight: bold;
+	font-size: 1.8rem;
+  padding: 4px;
+  z-index: 9;
+}
+
+.card-shadow-dark{
+  border-radius: 10px;
+  padding:2px;
+  box-shadow:0 1px 12px 2px var(--online);
 }
