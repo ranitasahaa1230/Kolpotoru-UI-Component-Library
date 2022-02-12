@@ -1,0 +1,8 @@
+.card-box{
+  border: 1px solid var(--gray);
+  margin: auto;
+  /* width:80%; */
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
