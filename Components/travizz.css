@@ -5,8 +5,8 @@
 @import url("./Badge/badge.css");
 @import url("./Button/button.css");
 @import url("./ResponsiveImages/image.css");
-/*@import url('./Input/input.css');
-@import url('./Card/card.css'); */
+/*@import url('./Input/input.css');*/
+@import url('./Card/card.css');
 @import url("./Lists/list.css");
 @import url("./Toast/toast.css");
 @import url("./Rating/rating.css");
@@ -54,7 +54,8 @@
   --primary-color: #3f37c9;
   --secondary-color: #0096c7;
   --footer-clr: #e2e2e2;
-
+  --secondary-color: #0096c7;
+  --card-color:#001219;
 }
 body {
   font-family: "Roboto Slab", serif;
