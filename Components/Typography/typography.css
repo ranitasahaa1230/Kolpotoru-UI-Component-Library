@@ -1,0 +1,44 @@
+.typography-box {
+  border: 1px solid var(--gray);
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
+  margin: 1rem;
+}
+.heading-3,
+.body-cp-lg {
+  font-size: 1.7rem;
+}
+.heading-4,
+.body-cp-rg {
+  font-size: 1.4rem;
+}
+.heading-5,
+.body-cp-md {
+  font-size: 1.2rem;
+}
+.heading-6,
+.body-cp-sm {
+  font-size: 1rem;
+}
+
+.gray {
+  color: var(--gray-text);
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="Slider Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../travizz.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"><a href="/" class="logo-design">Travizz</a></h1>
+        <nav class="navbar">
+          <ul>
+            <li class="home">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="home">
+             <a href="../Alert/alert.html">Documentation</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="link-social">
+          <a href="https://github.com/ranitasahaa1230/Travizz-UI-Component-Library" target="_blank"
+              class="nav-pills"><i class="fab fa-github nav-icons"></i></a>
+          <a href="https://twitter.com/Ifullofsunshine" target="_blank" class="nav-pills"><i
+                  class="fab fa-twitter nav-icons"></i></a>
+          <a href="https://www.linkedin.com/in/saharanitaa1230dreamer/" target="_blank" class="nav-pills"><i
+                  class="fab fa-linkedin nav-icons"></i></a>
+      </div>
+      </header>
+
+
+    <div class="container-wrapper">
+        <aside class="sidebar-left">
+            <section class="sidebar-list aside-left-container">
+                <h4 class="sidebar-head">Components</h4>
+                <ul class="nav-links">
+                    <li class="nav-link-item"><a href="../Alert/alert.html">Alert</a></li>
+                    <li class="nav-link-item">
+                        <a href="../Avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li class="nav-link-item">
+                        <a href="../Badge/badge.html">Badge</a>
+                    </li>
+                    <li class="nav-link-item">
+                        <a href="../Button/button.html">Button</a>
+                    </li>
+                    <li class="nav-link-item">
+                        <a href="../Card/card.html">Card</a>
+                      </li>
+                      <li class="nav-link-item">
+                        <a href="../Input/input.html">Input</a>
+                      </li>
+                    <li class="nav-link-item">
+                        <a href="../ResponsiveImages/image.html">Image</a>
+                    </li>
+                    <li class="nav-link-item">
+                        <a href="../Lists/list.html">Lists</a>
+                    </li>
+                      <li class="nav-link-item">
+                        <a href="../Modal/modal.html">Modal</a>
+                    </li>
+                    <li class="nav-link-item">
+                        <a href="../Navigation/navigation.html">Navigation</a>
+                    </li>
+                    <li class="nav-link-item">
+                        <a href="../Rating/rating.html">Rating</a>
+                    </li>
+                    <li class="nav-link-item">
+                        <a href="#">Slider</a>
+                    </li>
+                      <li class="nav-link-item">
+                        <a href="../Grid/grid.html">Simplified Grid</a>
+                      </li>
+                      <li class="nav-link-item">
+                        <a href="../Typography/typography.html">Typography</a>
+                      </li>
+                      <li class="nav-link-item">
+                        <a href="../Toast/toast.html">Toast</a>
+                      </li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="mainbar-container">
+            <section class="component-features" id="slider">
+                <h1>Slider</h1>
+                <p>
+                    Sliders allow users to make selections from a range of values. Three types of sliders are available:
+                    <span class="primary-text">Styled Slider, Slider with Icons and Disabled Slider</span>.
+                </p>
+
+                <div>
+                    <h2>Example of Styled Slider</h2>
+                </div>
+
+                <div class="slider-box">
+                    <div class="slider-container">
+                        <label class="slider-track" for="range">
+                            <input class="slider" type="range" name="range" id="range" min="0" max="150" value="15" />
+                        </label>
+                    </div>
+                </div>
+
+                <div class="code-snippet-display">
+                    <code>
+                        <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=1053.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522slider-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522slider-track%2522%2520for%253D%2522range%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522slider%2522%2520type%253D%2522range%2522%2520name%253D%2522range%2522%2520id%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522150%2522%2520value%253D%252215%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                </code>
+                </div>
+
+                <div>
+                    <h2>Example of Slider with Icon</h2>
+                </div>
+
+                <div class="slider-box">
+                    <div class="slider-with-icon">
+                        <label class="slider-with-icon-label" for="range"><i class="fas fa-volume-up"></i></label>
+                        <input class="slider-icon" type="range" name="range" id="range" min="0" max="100" value="80" />
+                    </div>
+                </div>
+
+                <div class="code-snippet-display">
+                    <code>
+                        <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=1029.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522slider-with-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522slider-with-icon-label%2522%2520for%253D%2522range%2522%253E%253Ci%2520class%253D%2522fas%2520fa-volume-up%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522slider-icon%2522%2520type%253D%2522range%2522%2520name%253D%2522range%2522%2520id%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%252280%2522%252F%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </code>
+                </div>
+
+                <div>
+                    <h2>Example of Disabled Slider</h2>
+                </div>
+
+                <div class="slider-box">
+                    <div class="slider-with-icon disabled-slider">
+                        <label class="slider-with-icon-label slider-label" for="range"><i
+                                class="fas fa-volume-up"></i></label>
+                        <input class="slider-icon slider-icon-label" type="range" name="range" id="range" min="0"
+                            max="100" value="50" disabled />
+                    </div>
+                </div>
+
+                <div class="code-snippet-display">
+                    <code>
+                        <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=1053.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522slider-with-icon%2520disabled-slider%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522slider-with-icon-label%2520slider-label%2522%2520for%253D%2522range%2522%253E%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-volume-up%2522%253E%253C%252Fi%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522slider-icon%2520slider-icon-label%2522%2520type%253D%2522range%2522%2520name%253D%2522range%2522%2520id%253D%2522range%2522%2520min%253D%25220%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520max%253D%2522100%2522%2520value%253D%252250%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </code>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

@@ -4,39 +4,47 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 1rem;
-  box-shadow: 0 3px 10px var(--filled-red);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  min-height: 12vh;
-  background: var(--bg-code);
-}
-.header-logo {
-  width: 18rem;
-  margin-left: 2rem;
-  border-radius: 2rem;
+  padding: 0 8px;
+  box-shadow: 0 0 12px 2px var(--primary-color);
 }
 
-.header-nav {
+.logo {
+  background: -webkit-linear-gradient(
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-weight: 900;
+}
+.logo-design{
+  font-size: 3rem;
+}
+
+.navbar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  font-size: 1.2rem;
 }
-.header-nav li {
+.navbar li {
   display: inline-block;
-}
-.navlink {
-  margin: 2rem;
-}
-.header-nav a {
   padding: 1rem;
+}
+
+.home:hover,
+li a:hover{
+  color: var(--text-color);
 }
 a {
   text-decoration: none;
-  cursor: pointer;
   color: var(--gray);
+  cursor: pointer;
   font-size: 1.3rem;
 }
+
 .link-social {
   display: flex;
   margin-left: auto;
@@ -44,9 +52,7 @@ a {
   flex-wrap: wrap;
   margin-right: 5rem;
 }
-.navlink a:hover {
-  font-weight: 600;
-}
+
 
 .container-wrapper {
   /* max-width: 1000px; */
@@ -110,4 +116,63 @@ a {
 }
 hr.component-separator {
   margin: 3rem 0 1rem 0;
+}
+
+/* section */
+.section__bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.quiz__section {
+  line-height: 1.6;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.quiz__image {
+  width: 100%;
+  height: auto;
+}
+h2 {
+  /* color: var(--primary-color); */
+}
+button.explore__btn {
+  color: var(--bg-code);
+  padding: 1rem;
+  background: var(--primary-color);
+  border: none;
+  font-size: 1rem;
+  border-radius: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+button.explore__btn:hover {
+  opacity: 1;
+}
+
+
+
+/* footer */
+.footer {
+  text-align: center;
+  background: var(--footer-clr);
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  padding: 1.8rem;
+}
+.link__social {
+  margin: 1rem;
+}
+.nav__pills .nav-icons{
+  padding: 8px;
+  font-size: 1.8rem;
+}
+.nav__pills:hover {
+  color: var(--text-color);
+}
+span.footer__copyright {
+  font-size: 1.2rem;
 }
