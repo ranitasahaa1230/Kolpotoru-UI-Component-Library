@@ -51,6 +51,10 @@
   --blue-color: #3a86ff;
   --gray-text: #6b705c;
   --secondary-green:#560bad;
+  --primary-color: #3f37c9;
+  --secondary-color: #0096c7;
+  --footer-clr: #e2e2e2;
+
 }
 body {
   font-family: "Roboto Slab", serif;
