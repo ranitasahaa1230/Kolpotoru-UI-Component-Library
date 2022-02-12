@@ -136,7 +136,7 @@ hr.component-separator {
   height: auto;
 }
 h2 {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 button.explore__btn {
   color: var(--bg-code);
