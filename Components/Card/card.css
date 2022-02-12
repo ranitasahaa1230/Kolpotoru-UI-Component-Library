@@ -71,7 +71,23 @@
 .btn-dismiss:hover{
   border: 2px solid var(--black-bg);
 }
+.card-horizontal {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	position: relative;
+	width:36rem;
+  padding: 1.2rem;
+}
 
+.btn-horizontal{
+	display: flex;
+  flex-wrap: wrap;
+}
+.horizontal-footer:hover{
+  background: none;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
 .overlay-card{
   opacity: 0.4;
   pointer-events: none;
