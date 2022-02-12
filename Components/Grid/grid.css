@@ -58,6 +58,6 @@
   padding: 10px 14px;
 }
 .card-vertical:hover {
-  background-color: var(--black-bg);
+  background-color:var(--card-color);
   color: var(--bg-code);
 }

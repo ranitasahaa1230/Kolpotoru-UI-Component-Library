@@ -51,6 +51,8 @@
   --blue-color: #3a86ff;
   --gray-text: #6b705c;
   --secondary-green:#560bad;
+  --secondary-color: #0096c7;
+  --card-color:#001219;
 }
 body {
   font-family: "Roboto Slab", serif;

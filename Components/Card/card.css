@@ -2,7 +2,47 @@
   border: 1px solid var(--gray);
   margin: auto;
   /* width:80%; */
-  padding: 0.3rem 1rem;
+  padding:1rem;
   border-radius: 6px;
   margin-bottom: 1.5rem;
+}
+
+.card {
+  width: 20rem;
+  margin: 1rem;
+  overflow: hidden;
+  height: max-content;
+  outline: none;
+  border-radius: 2rem;
+  border: 1px solid var(--online);
+  box-shadow: 0 2px 2px var(--online);
+
+}
+.card-text{
+  border-radius: 10px;
+}
+.desc,.card-footer{
+  font-size: 1.2rem;
+  padding: 0 10px;
+  margin-bottom: 6px;
+}
+.card-title{
+  margin: 10px 8px;
+  padding: 0 4px;
+  font-size: 1.6rem;
+}
+.card:hover{
+  box-shadow: 0 0 12px 2px var(--secondary-color);
+}
+.card-footer .btn{
+  color: var(--bg-code);
+  border-radius:5px;
+  margin: 5px;
+}
+.card-footer .btn:hover {
+  opacity: 0.8;
+}
+.card-img{
+    width: 20rem;
+    height: 16rem;
 }
