@@ -35,11 +35,18 @@
   color: var(--text-color);
 }
 
-nav.logo {
-  font-size: 2rem;
-  font-weight: bold;
+.nav-logo {
+  background: -webkit-linear-gradient(
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
 }
-
+.nav-design{
+  font-size: 2rem;
+}
 .form-class {
   display: flex;
   flex-wrap: wrap;
