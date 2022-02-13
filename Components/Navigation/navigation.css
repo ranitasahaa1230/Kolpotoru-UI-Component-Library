@@ -1,0 +1,120 @@
+.navigation-box {
+  border: 1px solid var(--gray);
+  margin: auto;
+  /* width:80%; */
+  padding: 2rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.nav-bar {
+  border-bottom: 2px solid var(--blue);
+  padding: 0 5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar-logo {
+  font-family: "Gill Sans MT", Calibri;
+  font-size: 2.5rem;
+  color: var(--blue);
+}
+
+.nav-bar-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.link-text {
+  font-size: 1.5rem;
+}
+.link-text:hover {
+  color: var(--text-color);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 8px;
+  box-shadow: 0 0 12px 2px var(--primary-color);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  font-size: 1.2rem;
+}
+.navbar li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.form-class {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 2px solid var(--bg-code);
+  border-radius: 50px;
+}
+
+.form-searchbar,
+.form-btn {
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+.form-searchbar {
+  flex-grow: 1;
+  border-radius: 50px;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.form-btn {
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.form-btn:hover,
+.form-btn i:hover {
+  background: var(--text-color);
+  color: var(--bg-code);
+}
+.header-nav {
+  margin-left: auto;
+}
+.icons {
+  font-size: 1.2rem;
+  padding: 3.5px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.header-nav a {
+  padding: 8px;
+}
+.home:hover,
+li a:hover,
+.user:hover {
+  color: var(--text-color);
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.img .icons {
+  margin-left: 10px;
+  font-size: 2.2rem;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="Navigation Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../travizz.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <a href="/" aria-current="page" class="header-logo">
+        <img src="/logo-assets/logo.png" alt="logo" class="header-logo"
+      /></a>
+
+      <div class="header-nav">
+        <ul class="navlink">
+          <li><a href="/">Home</a></li>
+          <li><a href="/docs/">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="link-social">
+        <a
+          href="https://github.com/ranitasahaa1230/Travizz-UI-Component-Library"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-github nav-icons"></i
+        ></a>
+        <a
+          href="https://twitter.com/Ifullofsunshine"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-twitter nav-icons"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
+          target="_blank"
+          class="nav-pills"
+          ><i class="fab fa-linkedin nav-icons"></i
+        ></a>
+      </div>
+    </nav>
+
+    <div class="container-wrapper">
+      <aside class="sidebar-left">
+        <section class="sidebar-list aside-left-container">
+          <h4 class="sidebar-head">Components</h4>
+          <ul class="nav-links">
+            <li class="nav-link-item"><a href="#">Alert</a></li>
+            <li class="nav-link-item">
+              <a href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Button/button.html">Button</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Card/card.html">Card</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="#Input">Input</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Responsive Images/image.html">Images</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Lists/list.html">Lists</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Modal/modal.html">Modal</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Navigation/navigation.html">Navigation</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Rating/rating.html">Rating</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Slider/slider.html">Slider</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Grid/grid.html">Simplified Grid</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Typography/typography.html">Typography</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="../Toast/toast.html">Toast</a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="mainbar-container">
+        <section class="component-features" id="navigation">
+          <h1>Navigation</h1>
+          <p>
+            Navigation bar is used to navigate through the web apps or websites.
+            This navigation component is responsive. It is a hamburger menu in
+            medium and small devices
+          </p>
+
+          <div>
+            <h2>Simple Navigation</h2>
+            <p>You can copy html part from below code snippet.</p>
+          </div>
+
+          <div class="navigation-box">
+            <nav class="nav-bar one-edge-shadow">
+              <div class="nav-bar-primary">
+                <ul class="nav-bar-links">
+                  <a href="#" class="nav-bar-logo">TRAVIZZ</a>
+                  <li><a href="#" class="link-text">Home</a></li>
+                  <li><a href="#" class="link-text">Shop Now</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=944.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cnav%2520class%253D%2522nav-bar%2520one-edge-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-bar-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-bar-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-bar-logo%2522%253ETRAVIZZ%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-text%2522%253EHome%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-text%2522%253EShop%2520Now%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+
+          <div>
+            <h2>Simple Responsive Navbar</h2>
+          </div>
+
+          <div class="navigation-box">
+            <header class="header">
+              <h1 class="logo"><a href="#">Travizz</a></h1>
+              <nav class="navbar">
+                <ul>
+                  <li>
+                    <form class="form-class">
+                      <input
+                        type="text"
+                        class="form-searchbar"
+                        id="input-search"
+                        placeholder="Find a quiz"
+                      />
+                      <button id="submit-btn" class="form-btn">
+                        <i class="fas fa-search icons"></i>
+                      </button>
+                    </form>
+                  </li>
+                  <li class="home">
+                    <i class="fas fa-home icons"></i><a href="#">Home</a>
+                  </li>
+                  <li class="home">
+                    <i class="fas fa-chart-line icons"></i
+                    ><a href="#">Dashboard</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="header-nav">
+                <a href="#" class="user">
+                  <span>LOGIN</span>
+                  <span class="img"
+                    ><i class="fas fa-user-circle icons"></i
+                  ></span>
+                </a>
+              </div>
+            </header>
+          </div>
+
+          <div class="code-snippet-display">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=655&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cheader%2520class%253D%2522header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522logo%2522%253E%253Ca%2520href%253D%2522%2523%2522%253ETravizz%253C%252Fa%253E%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522form-class%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%2520class%253D%2522form-searchbar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522input-search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Find%2520a%2520quiz%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522submit-btn%2522%2520class%253D%2522form-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520icons%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522home%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-home%2520icons%2522%253E%253C%252Fi%253E%253Ca%2520href%253D%2522%2523%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522home%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-chart-line%2520icons%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ca%2520href%253D%2522%2523%2522%253EDashboard%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522user%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELOGIN%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-user-circle%2520icons%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
