@@ -60,7 +60,7 @@
   padding: 1rem;
 }
 
-form {
+.form-class {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -68,31 +68,31 @@ form {
   border-radius: 50px;
 }
 
-form input,
-form button {
+.form-searchbar,
+.form-btn {
   border: none;
   cursor: pointer;
   padding: 6px 10px;
 }
 
-form input {
+.form-searchbar {
   flex-grow: 1;
   border-radius: 50px;
   outline: none;
   font-size: 1.1rem;
 }
 
-form button {
+.form-btn {
   transition: all 0.3s ease;
   font-size: 1.2rem;
 }
 
-form button:hover,
-form button i:hover {
+.form-btn:hover,
+.form-btn i:hover {
   background: var(--text-color);
   color: var(--bg-code);
 }
-.header__nav {
+.header-nav {
   margin-left: auto;
 }
 .icons {
@@ -102,7 +102,7 @@ form button i:hover {
   cursor: pointer;
 }
 
-.header__nav a {
+.header-nav a {
   padding: 8px;
 }
 .home:hover,
