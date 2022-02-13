@@ -6,7 +6,7 @@
 @import url("./Button/button.css");
 @import url("./ResponsiveImages/image.css");
 /*@import url('./Input/input.css');*/
-@import url('./Card/card.css');
+@import url("./Card/card.css");
 @import url("./Lists/list.css");
 @import url("./Navigation/navigation.css");
 @import url("./Toast/toast.css");
@@ -15,7 +15,6 @@
 @import url("./Grid/grid.css");
 @import url("./Typography/typography.css");
 @import url("./Slider/slider.css");
-
 
 *,
 *::before,
@@ -51,12 +50,12 @@
   --gray-hover: #adb5bd;
   --blue-color: #3a86ff;
   --gray-text: #6b705c;
-  --secondary-green:#560bad;
+  --secondary-green: #560bad;
   --primary-color: #3f37c9;
   --secondary-color: #0096c7;
   --footer-clr: #e2e2e2;
   --secondary-color: #0096c7;
-  --card-color:#001219;
+  --card-color: #001219;
 }
 body {
   font-family: "Roboto Slab", serif;
