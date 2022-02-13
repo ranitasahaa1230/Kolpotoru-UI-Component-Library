@@ -119,41 +119,52 @@ hr.component-separator {
 }
 
 /* section */
-.section__bar {
+.section-designbar{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin: 1rem 3rem;
 }
-.quiz__section {
+.design-section{
   line-height: 1.6;
   font-size: 1.5rem;
   padding: 1rem;
 }
-.quiz__image {
+.design-image {
   width: 100%;
   height: auto;
 }
-h2 {
-  /* color: var(--primary-color); */
+.text-heading{
+  color: var(--secondary-green);
 }
-button.explore__btn {
-  color: var(--bg-code);
-  padding: 1rem;
-  background: var(--primary-color);
-  border: none;
-  font-size: 1rem;
-  border-radius: 2rem;
-  margin: 1rem;
-  cursor: pointer;
-  opacity: 0.8;
+.btn-installaton{
+  margin: 0 0.5px;
+  opacity: 0.9;
 }
-button.explore__btn:hover {
+.btn-installaton:hover {
   opacity: 1;
 }
+.section-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 12px 5rem;
+  /* flex-wrap: wrap; */
+}
 
-
+.text-s{
+  font-size: 1.1rem;
+}
+.version{
+  color: var(--blue);
+  margin: 1.2rem 1rem;
+}
+.version-theme{
+  list-style: square;
+  margin:4px 4rem;
+  color: var(--card-color);
+}
 
 /* footer */
 .footer {
@@ -163,16 +174,16 @@ button.explore__btn:hover {
   font-size: 1.3rem;
   padding: 1.8rem;
 }
-.link__social {
+.link-footer-social{
   margin: 1rem;
 }
-.nav__pills .nav-icons{
+.nav-footer-pills .nav-icons{
   padding: 8px;
   font-size: 1.8rem;
 }
-.nav__pills:hover {
+.nav-footer-pills:hover {
   color: var(--text-color);
 }
-span.footer__copyright {
+span.footer-design-copyright {
   font-size: 1.2rem;
 }
