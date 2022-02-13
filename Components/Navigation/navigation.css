@@ -35,29 +35,9 @@
   color: var(--text-color);
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0 8px;
-  box-shadow: 0 0 12px 2px var(--primary-color);
-}
-
-.logo {
+nav.logo {
   font-size: 2rem;
   font-weight: bold;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-  font-size: 1.2rem;
-}
-.navbar li {
-  display: inline-block;
-  padding: 1rem;
 }
 
 .form-class {
