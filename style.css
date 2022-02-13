@@ -124,7 +124,7 @@ hr.component-separator {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 1rem 3rem;
+  margin: 1rem 3rem 12px 3rem;
 }
 .design-section{
   line-height: 1.6;
@@ -135,8 +135,9 @@ hr.component-separator {
   width: 100%;
   height: auto;
 }
-.text-heading{
+h2.text-heading{
   color: var(--secondary-green);
+  font-size: 2.5rem;
 }
 .btn-installaton{
   margin: 0 0.5px;
@@ -145,12 +146,26 @@ hr.component-separator {
 .btn-installaton:hover {
   opacity: 1;
 }
+.text-library{
+  font-size: 2.4rem;
+  color: var(--card-color);
+
+}
+
+.faster-library{
+  color: var(--text-color);
+  display: inline-block;
+  font-weight: 800;
+  
+}
+
 .section-container{
+  gap: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 12px 5rem;
   /* flex-wrap: wrap; */
+  margin: 10px 6rem;
 }
 
 .text-s{
