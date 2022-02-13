@@ -18,6 +18,10 @@ button {
   background: var(--bg-code);
   cursor: pointer;
 }
+.action-btn{
+  display: inline-block;
+  margin: auto 2rem;
+}
 
 .btn-variant {
   margin: 1.5rem 0.8rem;
