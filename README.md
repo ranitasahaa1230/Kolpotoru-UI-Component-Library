@@ -1,6 +1,6 @@
 # Travizz UI - Component-Library
 
-Component Library to build UI faster - The ###UI library### you always wanted
+Component Library to build UI faster - The UI library you always wanted
 
 This component library is built with html, css and vanilla js.
 All the components are ready with css, to create your own app faster. Just copy paste the code and you are ready to fill your content.
