@@ -53,10 +53,11 @@
   --secondary-green: #560bad;
   --primary-color: #3f37c9;
   --secondary-color: #0096c7;
-  --footer-clr: #e2e2e2;
+  --footer-color: #403747;
   --secondary-color: #0096c7;
   --card-color: #001219;
   --transition: all 0.3s linear;
+  --underline-bottom:#ee82ee;
 }
 
 .no-scroll {
@@ -77,7 +78,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 10px;
-  height: 6px;
+  height: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -115,7 +116,7 @@ p {
 }
 
 .primary-text {
-  color: var(--text-color);
+  color: var(--secondary-green);
   font-size: 1.2rem;
 }
 ul {
