@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
 @import url("./Alert/alert.css");
 @import url("./Avatar/avatar.css");
@@ -64,14 +64,24 @@
 }
 
 html {
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
   scroll-behavior: smooth;
-  /* background-color: var(--primary-color); */
 }
 
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   color: var(--gray);
   min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
 }
 
 img,
