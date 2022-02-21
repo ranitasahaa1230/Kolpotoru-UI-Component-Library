@@ -56,7 +56,18 @@
   --footer-clr: #e2e2e2;
   --secondary-color: #0096c7;
   --card-color: #001219;
+  --transition: all 0.3s linear;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* background-color: var(--primary-color); */
+}
+
 body {
   font-family: "Roboto Slab", serif;
   color: var(--gray);
@@ -99,6 +110,23 @@ p {
 }
 ul {
   list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+span {
+  margin-right: 0.4rem;
+}
+
+i,
+a,
+button {
+  cursor: pointer;
 }
 
 .nav-icons {
