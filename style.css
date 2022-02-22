@@ -11,6 +11,11 @@
   background-color:var(--bg-code);
   flex-wrap: wrap;
   box-shadow: 0 12px 12px var(--secondary-green);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .nav-logo {
@@ -54,7 +59,7 @@
 }
 
 .nav-links li a:hover {
-  color: var(--card-color);
+  color: var(--text-color);
   font-weight: 900;
   border-bottom: 1px solid var(--blue);
 }
@@ -82,6 +87,8 @@
   border-color: transparent;
   color: var(--card-color);
   cursor: pointer;
+  z-index: 4;
+  position: fixed;
 }
 .sidebar-toggle:hover {
   color:var(--secondary-green);
@@ -112,7 +119,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
   background:var(--bg-code);
   display: flex;
@@ -128,10 +135,14 @@
   /* display: none; */
 }
 .sidebar-aside {
-  width: 90%;
+  width: 100%;
   padding: 1.5rem;
   overflow-y: scroll;
 }
+
+.sidebar-aside::-webkit-scrollbar-thumb {
+  background-color:var(--gray);
+} 
 
 .sidebar-nav-links {
   display: flex;
@@ -171,14 +182,13 @@ flex-direction: column;
 
 /* aside */
 .docs-aside {
-width: 20%;
+width: 25%;
 padding: 1.5rem;
-overflow-y: scroll;
-max-height: 69vh;
+/* overflow-y: scroll; */
+padding-top: 6rem;
+/* max-height: 69vh; */
+box-shadow: 0 0 4px var(--secondary-green);
 }
-.docs-aside::-webkit-scrollbar-thumb {
-  background-color:var(--blue-bg);
-} 
 .docs-link {
 color: var(--darkblue-bg);
 padding: 0.5rem;
@@ -220,21 +230,24 @@ list-style-type: none;
 /* components */
 .components {
 width: 100%;
-overflow-y: scroll;
-max-height: 70vh;
+/* overflow-y: scroll; */
+/* max-height: 70vh; */
 padding-right: 2rem;
+padding-top: 5.2rem;
+
 }
 
-.footer {
+.footer{
 text-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color:var(--footer-color);
+background-color:var(--secondary-green);
 color: var(--bg-code);
-position: fixed;
-bottom: 0;
+/* position: fixed;
+bottom: 0; */
 width: 100%; 
+font-size: 1.1rem;
 padding: 1rem;
 }
 
@@ -247,10 +260,10 @@ padding: 1rem;
   color: var(--bg-code);
 }
 .nav-pills .icon:hover {
-  color: var(--black-bg);
+  color: var(--text-color);
 } 
 span.footer-copyright {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 
@@ -346,7 +359,7 @@ a.version {
   .components {
     margin: 1.2rem;
     padding-right: 0;
-    max-height: 69vh;
+    /* max-height: 69vh; */
   }
   .nav-links{
     margin: auto;

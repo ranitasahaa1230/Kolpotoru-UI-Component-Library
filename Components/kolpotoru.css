@@ -72,13 +72,14 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--gray);
+  /* color: var(--gray); */
   min-height: 100vh;
+  position: relative;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  height: 2px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
