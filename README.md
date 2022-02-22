@@ -1,7 +1,4 @@
 
-
-https://user-images.githubusercontent.com/37957073/155203276-04c23e86-ef82-498b-b895-bda3c3227772.mp4
-
 # Kolpotoru UI - Let's fulfill all wishes
 
 Component Library to build UI faster - The UI library you always wanted, which would fulfill all your wishes
@@ -52,6 +49,8 @@ The components of Kolpotoru UI are as follows:
   Kolpotoru UI(https://kolpotoru-ui-design.netlify.app/)
 
   ## Demo
+  https://user-images.githubusercontent.com/37957073/155203276-04c23e86-ef82-498b-b895-bda3c3227772.mp4
+
 
 ## 👩‍💻 Connect with me
 
