@@ -1,63 +1,12 @@
-:root {
-  --gray: #3e4152;
-  --blue: #084298;
-  --red: #dc3545;
-  --text-color: #007fff;
-  --bg-code: #fafafa;
-}
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 2rem;
-  color: var(--gray);
-}
-h1 {
-  font-size: 3rem;
-}
-
-h1,
-h2,
-p {
-  margin: 0.625rem 0;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 2rem;
-}
-p {
-  font-size: 1.2rem;
-  padding: 0.8rem;
-}
 .input-box {
   border: 1px solid var(--gray);
   margin: auto;
-  width: 80%;
   padding: 0.3rem 1rem;
   border-radius: 6px;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
-.fa {
-  margin-left: 1rem;
-  font-size: 1.5rem;
-  padding: 0.4rem;
-}
-.code-snippet-display {
-  box-sizing: border-box;
-  width: 80%;
-  max-height: 300px;
-  padding: 1rem 0;
-  background-color: var(--bg-code);
-  margin: 0 auto;
-  overflow: auto;
-  border: 2px solid var(--text-color);
-  border-radius: 6px;
-  margin-bottom: 1.2rem;
-  margin-top: 1.2rem;
-}
-.code-snippet-display iframe {
-  width: 100%;
-  border: none;
-}
+
 .radio,
 .checkbox {
   display: flex;

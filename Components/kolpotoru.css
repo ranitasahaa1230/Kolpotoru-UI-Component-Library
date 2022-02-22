@@ -5,7 +5,7 @@
 @import url("./Badge/badge.css");
 @import url("./Button/button.css");
 @import url("./ResponsiveImages/image.css");
-/*@import url('./Input/input.css');*/
+@import url('./Input/input.css');
 @import url("./Card/card.css");
 @import url("./Lists/list.css");
 @import url("./Navigation/navigation.css");
