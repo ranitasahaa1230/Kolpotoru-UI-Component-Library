@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ranita Saha" />
+    <meta name="description" content="input Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./input.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Inputs</h1>
+    <p>
+      Inputs are essential for user interaction with the website. Inputs are
+      used to take information from the user, and then save the data to the
+      server, accordingly.
+    </p>
+
+    <div>
+      <h2>Label Inputs</h2>
+      <p>
+        Label Input has a label present at the top of the input field. They can
+        be customized to display error-message and change color accordingly.
+      </p>
+    </div>
+
+    <div class="input input-box">
+      <div class="input-group">
+        <label>Enter Username :</label>
+        <input type="text" required />
+      </div>
+
+      <div class="input-group err">
+        <label>Password :</label>
+        <input type="text" placeholder="Enter password" required />
+        <div class="error-message">Wrong Password. Try again!!</div>
+      </div>
+    </div>
+
+    <div class="code-snippet-display">
+      <code> 
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=701.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253EEnter%2520Username%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group%2520err%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253EPassword%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520password%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-message%2522%253EWrong%2520Password.%2520Try%2520again%21%21%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+        style="border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Text Box</h2>
+    </div>
+
+    <div class="text-box input-box">
+        <label class="form-label">Example Textarea :</label>
+        <textarea type="email" class="form-field form-textarea" placeholder="Start writing here.." rows="3"></textarea>
+    </div>
+
+    <div class="code-snippet-display">
+      <code> 
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=626.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Clabel%2520class%253D%2522form-label%2522%253EExample%2520Textarea%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctextarea%2520type%253D%2522email%2522%2520class%253D%2522form-field%2520form-textarea%2522%2520placeholder%253D%2522Start%2520writing%2520here..%2522%2520rows%253D%25223%2522%253E%253C%252Ftextarea%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+        style="border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Radio</h2>
+      <p>Radio buttons allow the user to select one option from a set.</p>
+    </div>
+
+    <div class="radio input-box">
+      <div class="radio">
+        <label for="radio-1">
+          <input id="radio-1" name="radio" type="radio" checked />
+          Checked
+        </label>
+      </div>
+
+      <div class="radio">
+        <label for="radio-2">
+          <input id="radio-2" name="radio" type="radio" />
+          Unchecked
+        </label>
+      </div>
+
+      <div class="radio disabled">
+        <label for="radio-3">
+          <input id="radio-3" name="radio" type="radio" disabled />
+          Disabled
+        </label>
+      </div>
+    </div>
+
+    <div class="code-snippet-display">
+      <code> 
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=646&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522radio-1%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520checked%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Checked%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522radio-2%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Unchecked%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio%2520disabled%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522radio-3%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Disabled%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+        style="border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Checkbox</h2>
+      <p>
+        Checkboxes allow the user to choose one or more items from a group.
+        Checkboxes can be used to turn an option on or off.<br />
+        If you have multiple options appearing in a list, you can maintain space
+        by using checkboxes instead of on/off controls. If you have a single
+        option, avoid using a checkbox and use an on/off switch instead.
+      </p>
+    </div>
+
+    <div class="checkbox input-box">
+      <div class="checkbox">
+        <label for="checkbox-1">
+          <input id="checkbox-1" name="checkbox" type="checkbox" checked />
+          Checked
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label for="checkbox-2">
+          <input id="checkbox-2" name="checkbox" type="checkbox" />
+          Unchecked
+        </label>
+      </div>
+
+      <div class="checkbox disabled">
+        <label for="checkbox-3">
+          <input id="checkbox-3" name="checkbox" type="checkbox" disabled />
+          Disabled
+        </label>
+      </div>
+    </div>
+
+    <div class="code-snippet-display">
+      <code> 
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=646&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522checkbox-1%2522%2520name%253D%2522checkbox%2522%2520type%253D%2522checkbox%2522%2520checked%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Checked%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522checkbox-2%2522%2520name%253D%2522checkbox%2522%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Unchecked%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522checkbox%2520disabled%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522checkbox-3%2522%2520name%253D%2522checkbox%2522%2520type%253D%2522checkbox%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Disabled%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+        style="border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </code>
+    </div>
+
+    <div>
+      <h2>Input validation</h2>
+      <p>
+        Validation is done while user enters the input.Use the class 'input-validation' on the inputs to use this functionality
+        <br>
+        You can copy html part from below code snippet.
+      </p>
+    </div>
+
+    <div class="formbox input-box">
+      <form class="form" novalidate>
+        <div class="row">
+          <div class="label-container">
+            <label for="name" class="form-label field-required p-md">Enter your name</label>
+          </div>
+      
+          <div class="input-container">
+            <input class="form-field my-sm p-sm border-sm"
+              type="text" id="name" placeholder="Sweet name"
+              required
+            />
+      
+            <div class="form-field-validation-message valid-message">
+              <span><i class="fas fa-check-circle"></i></span>
+              Looks Good!
+            </div>
+      
+            <div class="form-field-validation-message invalid-message">
+              <span><i class="fas fa-info-circle"></i></span>
+              Please enter you name
+            </div>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="label-container">
+            <label for="email" class="form-label field-required p-md">Enter your Email</label>
+          </div>
+          <div class="input-container">
+            <input class="form-field my-sm p-sm border-sm"
+              type="email" id="email"
+              placeholder="john@example.com"
+              required
+            />
+      
+            <div class="form-field-validation-message valid-message">
+              <span><i class="fas fa-check-circle"></i></span>
+              Looks Good!
+            </div>
+      
+            <div class="form-field-validation-message invalid-message">
+              <span><i class="fas fa-info-circle"></i></span>
+              Enter correct email
+            </div>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="label-container">
+            <label for="stateList" class="form-label p-md">Select Gender</label>
+          </div>
+          <div class="input-container">
+            <select class="form-field my-sm p-sm border-sm" id="stateList">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="row checkbox-field">
+          <div class="input-container mr-1">
+            <input class="form-field p-sm border-sm"
+              type="checkbox"
+              id="email"
+              placeholder="john@example.com"
+              required
+            />
+      
+            <div class="form-field-validation-message valid-message">
+              <span><i class="fas fa-check-circle"></i></span>
+              Looks Good!
+            </div>
+      
+            <div class="form-field-validation-message invalid-message">
+              <span><i class="fas fa-info-circle"></i></span>
+              You must agree before submitting
+            </div>
+          </div>
+      
+          <label for="email" class="form-label field-required p-md">Agree to terms and Services</label>
+        </div>
+      
+        <button class="btn btn-primary-outline btn-sm mt-2" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <div class="code-snippet-display">
+      <code> 
+        
+      </code>
+    </div>
+    <script src="./input.js"></script>
+  </body>
+</html>
