@@ -281,6 +281,7 @@ hr.component-separator {
   /* flex-wrap: wrap; */
   padding-top: 5.3rem;
   margin:2rem;
+  margin-bottom: 3rem;
 }
 .design-marginleft{
   margin-left: 3rem;
