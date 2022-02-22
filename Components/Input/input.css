@@ -21,12 +21,12 @@ input[type="checkbox"] {
   height:1rem;
 }
 label{
-    display: block;
-    font-size: 1.3rem;
-    margin: 0.2rem 0.5rem;
-    text-align: start;
+  display: block;
+  font-size: 1.2rem;
+  margin: 0.4rem 0.5rem;
+  text-align: start;
 }
-input[type=text], .form-textarea{
+input[type="text"], input[type="email"], .form-textarea{
     border: 1px solid var(--gray);
     padding:0.4rem 0.7rem;
     font-size:1rem;
@@ -37,7 +37,7 @@ input[type=text], .form-textarea{
     border-radius: 0.2rem;
 }
 
-.input-group input:focus, .form-textarea:focus{
+.input-group input:focus, .form-textarea:focus, .form-field:focus{
     border: 2px solid var(--blue);
 }
 .input-group.err input{
@@ -52,4 +52,68 @@ input[type=text], .form-textarea{
 }
 .form-textarea{
   width: 70%;
+}
+
+.form-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.label-container {
+  width:20%;
+}
+.input-container{
+  position: relative;
+  width: calc(80% - 2rem);
+  padding: 12px;
+}
+
+.input-container .form-field {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size:1rem;
+} 
+
+.checkbox-field {
+  position: relative;
+  color: var(--gray);
+  font-size: 1.5rem;
+}
+
+.checkbox-field .input-container {
+  width: 1rem;
+  position: static;
+}
+
+.form-field-validation-message {
+  display: none;
+  position: absolute;
+  bottom: -1.2rem;
+}
+
+.valid-message {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+.valid-message .nav-icons, .invalid-message .nav-icons{
+  font-size: 1.3rem;
+}
+
+.invalid-message {
+  color: var(--red);
+  font-size: 1.2rem;
+}
+
+.form .form-field:valid ~ .valid-message {
+  display: block;
+}
+
+.form.validate .form-field:invalid ~ .invalid-message {
+  display: block;
+}
+form .btn{
+  border-radius: 6px;
+  margin: 10px;
 }

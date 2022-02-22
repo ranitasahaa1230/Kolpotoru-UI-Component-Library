@@ -183,7 +183,7 @@
 
     <div class="text-box input-box">
         <label class="form-label">Example Textarea :</label>
-        <textarea type="email" class="form-field form-textarea" placeholder="Start writing here.." rows="3"></textarea>
+        <textarea type="text" class="form-field form-textarea" placeholder="Start writing here.." rows="3"></textarea>
     </div>
 
     <div class="code-snippet-display">
@@ -289,35 +289,35 @@
 
     <div class="formbox input-box">
       <form class="form" novalidate>
-        <div class="row">
+        <div class="form-row">
           <div class="label-container">
-            <label for="name" class="form-label field-required p-md">Enter your name</label>
+            <label for="name" class="form-label field-required">Enter your name:</label>
           </div>
       
-          <div class="input-container">
-            <input class="form-field my-sm p-sm border-sm"
-              type="text" id="name" placeholder="Sweet name"
+          <div class="input-container input-group">
+            <input class="form-field"
+              type="text" id="name" placeholder="Enter your name"
               required
             />
       
             <div class="form-field-validation-message valid-message">
-              <span><i class="fas fa-check-circle nav-icons "></i></span>
+              <span><i class="fas fa-check-circle nav-icons"></i></span>
               Looks Good!
             </div>
       
             <div class="form-field-validation-message invalid-message">
-              <span><i class="fas fa-info-circle nav-icons "></i></span>
+              <span><i class="fas fa-info-circle nav-icons"></i></span>
               Please enter you name
             </div>
           </div>
         </div>
       
-        <div class="row">
+        <div class="form-row">
           <div class="label-container">
-            <label for="email" class="form-label field-required p-md">Enter your Email</label>
+            <label for="email" class="form-label field-required">Enter your Email:</label>
           </div>
           <div class="input-container">
-            <input class="form-field my-sm p-sm border-sm"
+            <input class="form-field"
               type="email" id="email"
               placeholder="john@example.com"
               required
@@ -335,12 +335,12 @@
           </div>
         </div>
       
-        <div class="row">
+        <div class="form-row">
           <div class="label-container">
-            <label for="stateList" class="form-label p-md">Select Gender</label>
+            <label for="stateList" class="form-label field-required">Select Gender: </label>
           </div>
           <div class="input-container">
-            <select class="form-field my-sm p-sm border-sm" id="stateList">
+            <select class="form-field" id="stateList">
               <option value="male">Male</option>
               <option value="female">Female</option>
               <option value="other">Other</option>
@@ -348,9 +348,9 @@
           </div>
         </div>
       
-        <div class="row checkbox-field">
-          <div class="input-container mr-1">
-            <input class="form-field p-sm border-sm"
+        <div class="form-row checkbox-field">
+          <div class="inputbox-container">
+            <input class="form-field"
               type="checkbox"
               id="email"
               placeholder="john@example.com"
@@ -363,15 +363,15 @@
             </div>
       
             <div class="form-field-validation-message invalid-message">
-              <span><i class="fas fa-info-circle nav-icons "></i></span>
+              <span><i class="fas fa-info-circle nav-icons"></i></span>
               You must agree before submitting
             </div>
           </div>
       
-          <label for="email" class="form-label field-required p-md">Agree to terms and Services</label>
+          <label for="email" class="form-label field-required">I agree to terms and Services</label>
         </div>
       
-        <button class="btn btn-primary-outline btn-sm mt-2" type="submit">
+        <button class="btn btn-solid-primary" type="submit">
           Submit
         </button>
       </form>
@@ -379,9 +379,28 @@
 
     <div class="code-snippet-display">
       <code> 
-        
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=660.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522form%2522%2520novalidate%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522name%2522%2520class%253D%2522form-label%2520field-required%2522%253EEnter%2520your%2520name%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2520input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%2520id%253D%2522name%2522%2520placeholder%253D%2522Enter%2520your%2520name%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field-validation-message%2520valid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520nav-icons%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Looks%2520Good%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field-validation-message%2520invalid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520nav-icons%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Please%2520enter%2520you%2520name%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522form-label%2520field-required%2522%253EEnter%2520your%2520Email%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522form-field%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%2520id%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522john%2540example.com%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field-validation-message%2520valid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520nav-icons%2520%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Looks%2520Good%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-field-validation-message%2520invalid-message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520nav-icons%2520%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Enter%2520correct%2520email%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522stateList%2522%2520class%253D%2522form-label%2520field-required%2522%253ESelect%2520Gender%253A%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cselect%2520class%253D%2522form-field%2522%2520id%253D%2522stateList%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522male%2522%253EMale%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+        style="border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
       </code>
     </div>
+
+    <div>
+      <h2>JavaScript</h2>
+    </div>
+
+      <div class="code-snippet-display">
+          <code>
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=elm&width=718.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509const%2520forms%2520%253D%2520document.querySelectorAll%28%2522form%2522%29%253B%250A%250Aforms.forEach%28%28form%29%2520%253D%253E%2520%257B%250A%2520%2520form.addEventListener%28%2522submit%2522%252C%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520if%2520%28%21form.checkValidity%28%29%29%2520%257B%250A%2520%2520%2520%2520%2520%2520e.preventDefault%28%29%253B%250A%2520%2520%2520%2520%2520%2520form.classList.add%28%2522validate%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%257D%29%253B%250A%257D%29%253B"
+            style="border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          </code>
+      </div>
+
       </section>
     </section>
     </main>

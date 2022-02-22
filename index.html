@@ -11,6 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kolpotoru | Home</title>
     <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo-assets/favicon.ico"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -21,40 +27,93 @@
   </head>
   <body>
     <div class="app">
-      <header class="header">
-        <h1 class="logo"><a href="/" class="logo-design">Kolpotoru UI</a></h1>
-        <nav class="navbar">
-          <ul>
-            <li class="home">
-              <a href="/index.html">Home</a>
-            </li>
-            <li class="home">
-              <a href="./Components/Alert/alert.html">Documentation</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="link-social">
-          <a
-            href="https://github.com/ranitasahaa1230/Kolpotoru-UI-Component-Library"
-            target="_blank"
-            class="nav-pills"
-            ><i class="fab fa-github nav-icons"></i
-          ></a>
-          <a
-            href="https://twitter.com/Ifullofsunshine"
-            target="_blank"
-            class="nav-pills"
-            ><i class="fab fa-twitter nav-icons"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
-            target="_blank"
-            class="nav-pills"
-            ><i class="fab fa-linkedin nav-icons"></i
-          ></a>
+      <nav class="nav">
+        <!-- <div class="logo-small-screen">
+          <a href="./index.html"> <img src="../../logo-assets/apple-touch-icon.png" alt="logo" class="nav-logo" /></a>
+          <div class="design-font">
+            <h3>Kolpotoru UI</h3>
+            <span>LET'S FULFILL ALL WISHES</span>
+          </div>
+          </div> -->
+  
+        <div class="list-style-none logo-alt">
+          <a href="/"> <img src="./logo-assets/apple-touch-icon.png" alt="logo" class="nav-logo" /></a>
+          <div class="design-font">
+            <h3>Kolpotoru UI</h3>
+            <span>LET'S FULFILL ALL WISHES</span>
+          </div>
         </div>
-      </header>
+  
+        <ul class="nav-links">
+            <li class="list-style-none">
+                <a href="/">Home</a>
+            </li>
+            <li class="list-style-none">
+                <a href="../Alert/alert.html">Documentation</a>
+            </li>
+        </ul>
+        <ul class="social-media-links">
+            <li class="list-style-none">
+                <a href="https://github.com/ranitasahaa1230/Kolpotoru-UI-Component-Library" class="color-text-primary" target="_blank"><i
+                        class="fab fa-github"></i></a>
+            </li>
+            <li class="list-style-none">
+                <a href="https://twitter.com/Ifullofsunshine" class="color-text-primary" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-style-none">
+                <a href="https://www.linkedin.com/in/saharanitaa1230dreamer/" class="color-text-primary" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- responsive section -->
+    <div class="sidebar-toggle-container">
+      <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <section class="sidebar">
+      <div class="sidebar-header">
+        <a href="/"> <img src="../../logo-assets/apple-touch-icon.png" alt="logo" class="nav-logo" /></a>
+        <div class="design-font">
+          <h3>Kolpotoru UI</h3>
+          <span>LET'S FULFILL ALL WISHES</span>
+        </div>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <ul class="sidebar-nav-links text-lg font-bold">
+        <li class="list-style-none">
+          <a href="/">Home</a>
+        </li>
+        <li class="list-style-none">
+          <a href="../Alert/alert.html">Documentation</a>
+        </li>
+      </ul>
+      <aside class="sidebar-aside">
+        <h2 class="text-xl heading-text-primary">Components</h2>
+        <div class="horizontal-div"></div>
+        <div class="docs-sub-container">
+          <a href="./Components/Alert/alert.html" class="docs-link active-link">Alert</a>
+          <a href="./Components/Avatar/avatar.html" class="docs-link">Avatar</a>
+          <a href="./Components/Badge/badge.html" class="docs-link">Badge</a>
+          <a href="./Components/Button/button.html" class="docs-link">Button</a>
+          <a href="./Components/Card/card.html" class="docs-link">Card</a>
+          <a href="./Components/ResponsiveImages/image.html" class="docs-link">Image</a>
+          <a href="./Components/Input/input.html" class="docs-link">Input</a>
+          <a href="./Components/Lists/list.html" class="docs-link">Lists</a>
+          <a href="./Components/Modal/modal.html" class="docs-link">Modal</a>
+          <a href="./Components/Navigation/navigation.html" class="docs-link">Navigation</a>
+          <a href="./Components/Rating/rating.html" class="docs-link">Rating</a>
+          <a href="./Components/Slider/slider.html" class="docs-link">Slider</a>
+          <a href="./Components/Grid/grid.html" class="docs-link">Simplified Grid</a>
+          <a href="./Components/Typography/typography.html" class="docs-link">Typography</a>
+          <a href="./Components/Toast/toast.html" class="docs-link">Toast</a>
+        </div>
+      </aside>
+    </section>
 
       <section>
         <div class="section-designbar">
@@ -147,30 +206,30 @@
         </div>
       </section>
 
-      <!-- <footer class="footer">
+      <footer class="footer">
         <div>Made with 💕 by Ranita Saha</div>
-        <div class="link-footer-social">
+        <div class="link-social">
           <a
-            href="https://github.com/ranitasahaa1230/Kolpotoru-UI-Component-Library"
+            href="https://github.com/ranitasahaa1230/Quizomaniac"
             target="_blank"
-            class="nav-footer-pills"
-            ><i class="fab fa-github nav-icons"></i
+            class="nav-pills"
+            ><i class="fab fa-github icon"></i
           ></a>
           <a
             href="https://twitter.com/Ifullofsunshine"
             target="_blank"
-            class="nav-footer-pills"
-            ><i class="fab fa-twitter nav-icons"></i
+            class="nav-pills"
+            ><i class="fab fa-twitter icon"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/saharanitaa1230dreamer/"
             target="_blank"
-            class="nav-footer-pills"
-            ><i class="fab fa-linkedin nav-icons"></i
+            class="nav-pills"
+            ><i class="fab fa-linkedin icon"></i
           ></a>
         </div>
-        <span class="footer-design-copyright">© 2022 || Kolpotoru</span>
-      </footer> -->
+        <span class="footer-copyright">© 2022 || Kolpotoru UI Designs</span>
+      </footer>
     </div>
 
     <script src="./script.js"></script>
