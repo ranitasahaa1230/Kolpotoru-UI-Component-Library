@@ -6,7 +6,44 @@
   border-radius: 6px;
   margin-bottom: 1.5rem;
 }
-
+.section-products {
+  margin: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 4rem;
+}
+.cards {
+  width: 22rem;
+  overflow: hidden;
+  height: max-content;
+  outline: none;
+  border-radius: 8px;
+  position: relative;  
+}
+.cards:hover {
+  transform: scale(1.04);
+  box-shadow: 0 2px 2px var(--black-bg);
+}
+.cards-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+/* .card-content {
+  font-size: 1.6rem;
+  margin: 1rem;
+  color: var(--gray);
+}
+/*.card-grid {
+  display: flex;
+  justify-content: space-between;
+  color: var(--black-bg);
+  cursor: pointer;
+  margin: 5px;
+} */
 .card {
   width: 18rem;
   margin: 1rem;
