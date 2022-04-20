@@ -26,7 +26,7 @@ label{
   margin: 0.4rem 0.5rem;
   text-align: start;
 }
-input[type="text"], input[type="email"], .form-textarea{
+.input-text, .form-textarea{
     border: 1px solid var(--gray);
     padding:0.4rem 0.7rem;
     font-size:1rem;
