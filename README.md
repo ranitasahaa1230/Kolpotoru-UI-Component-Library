@@ -51,6 +51,26 @@ The components of Kolpotoru UI are as follows:
   ## Demo
   https://user-images.githubusercontent.com/37957073/155203276-04c23e86-ef82-498b-b895-bda3c3227772.mp4
 
+  ## Tech Stack
+- HTML
+- CSS
+- JavaScript
+    
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/ranitasahaa1230/Kolpotoru-UI-Component-Library.git
+```
+
+## Contribute!
+- This project is meant to be open source! Do feel free to add bugs and fork the repo for contribution. 
+- Liked the project? Do please ⭐ it :)
+
+## Authors
+
+- [@ranitasahaa1230](https://github.com/ranitasahaa1230)
 
 ## 👩‍💻 Connect with me
 
