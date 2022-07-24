@@ -29,8 +29,8 @@
 }
 
 .badge > .status-avatar {
-  bottom: 3px;
-  right: 10px;
+  bottom: -1px;
+  right: 8px;
   position: absolute;
   height: 14px;
   width: 14px;
